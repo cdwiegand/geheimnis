@@ -4,6 +4,7 @@
 #define GEHEIMNIS_CRYPTDIALOGBASE_H
 
 #include <kdialogbase.h>
+#include <kurlrequester.h>
 
 class QString;
 class QRadioButton;

@@ -5,6 +5,7 @@
 
 #include <qwidget.h>
 #include <qstring.h>
+#include <kurlrequester.h>
 
 class KConfig;
 

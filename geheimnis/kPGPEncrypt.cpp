@@ -144,7 +144,9 @@ kPGPEncrypt::kPGPEncrypt( const QString & infile, const QString & outfile,
     break;
   default:
     profileManager.setToDefaultProfile( mProfileCombo );
-    if ( mProfileCombo->currentItem() > 0 )
+    // if ( mProfileCombo->currentItem() > 0 )
+    // was disabled because there is always at least one profile
+    // at this point, so make sure to populate combos/lists...
       slotProfileSelected( mProfileCombo->currentItem() );
     break;
   }
@@ -231,11 +233,20 @@ void kPGPEncrypt::slotOk()
   bool encrypting = mEncryptCheck->isChecked();
 
   // the GUI should prevent this from being triggered:
-  assert( signing || encrypting );
+  // argh... don't use assert, check it yourself and warn the user!!
+  // assert( signing || encrypting );
+  if (!(signing || encrypting)) {
+      KMessageBox::sorry(this,i18n("Please select signing and/or encrypting."));
+      return;
+  }
   // these shouldn't happen, too:
-  assert( mCurrentProfile );
-  assert( mProfileCombo->currentItem() >= 0 );
-
+  // assert( mCurrentProfile );
+  // assert( mProfileCombo->currentItem() >= 0 );
+  if ((!mCurrentProfile) || (mProfileCombo->currentItem() < 0)) {
+      KMessageBox::sorry(this,i18n("Please select a profile (or reselect the current one), then click Ok again."));
+      return;
+  }
+  
   if ( !sanityCheckInFile( usingIncomingClipboard, mInClipboardRadio,
 			   mInFileRequester ) ) return;
   if ( !sanityCheckOutFile( usingOutgoingClipboard ) ) return;

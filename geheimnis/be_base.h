@@ -4,6 +4,7 @@
 
 #include <qstring.h>
 #include <qstringlist.h>
+#include <kfiledialog.h>
 
 class pkiKeyring;
 class QProgressDialog;
