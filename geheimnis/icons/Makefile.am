@@ -22,38 +22,38 @@ install-data-local:
 	$(INSTALL_DATA) $(srcdir)/exportKey.png $(kde_datadir)/geheimnis/toolbar/exportKey.png
 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
 	$(INSTALL_DATA) $(srcdir)/genKeys.png $(kde_datadir)/geheimnis/toolbar/genKeys.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(kde_datadir)/geheimnis/pics/icon_key_bad.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(kde_datadir)/geheimnis/pics/icon_key_disabled.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(kde_datadir)/geheimnis/pics/icon_key_expired.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(kde_datadir)/geheimnis/pics/icon_key_pub2.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(kde_datadir)/geheimnis/pics/icon_key_pub.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(kde_datadir)/geheimnis/pics/icon_key_revoked.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(kde_datadir)/geheimnis/pics/icon_key_sec.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(kde_datadir)/geheimnis/pics/icon_name_bad.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(kde_datadir)/geheimnis/pics/icon_name_pub2.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(kde_datadir)/geheimnis/pics/icon_name_pub.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(kde_datadir)/geheimnis/pics/icon_name_sec.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(kde_datadir)/geheimnis/pics/icon_sig_bad.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(kde_datadir)/geheimnis/pics/icon_sig_pub.png
-	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
-	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(kde_datadir)/geheimnis/icons/icon_key_bad.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(kde_datadir)/geheimnis/icons/icon_key_disabled.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(kde_datadir)/geheimnis/icons/icon_key_expired.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(kde_datadir)/geheimnis/icons/icon_key_pub2.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(kde_datadir)/geheimnis/icons/icon_key_pub.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(kde_datadir)/geheimnis/icons/icon_key_revoked.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(kde_datadir)/geheimnis/icons/icon_key_sec.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(kde_datadir)/geheimnis/icons/icon_name_bad.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(kde_datadir)/geheimnis/icons/icon_name_pub2.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(kde_datadir)/geheimnis/icons/icon_name_pub.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(kde_datadir)/geheimnis/icons/icon_name_sec.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(kde_datadir)/geheimnis/icons/icon_sig_bad.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(kde_datadir)/geheimnis/icons/icon_sig_pub.png
+	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
 	$(INSTALL_DATA) $(srcdir)/importKey.png $(kde_datadir)/geheimnis/toolbar/importKey.png
 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
@@ -101,22 +101,22 @@ uninstall-local:
 	-rm -f $(kde_datadir)/geheimnis/toolbar/encrypt.png
 	-rm -f $(kde_datadir)/geheimnis/toolbar/exportKey.png
 	-rm -f $(kde_datadir)/geheimnis/toolbar/genKeys.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_bad.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_disabled.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_expired.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_pub2.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_pub.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_revoked.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_sec.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_bad.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_pub2.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_pub.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_sec.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_bad.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_pub.png
-	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_bad.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_disabled.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_expired.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_pub2.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_pub.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_revoked.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_sec.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_bad.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_pub2.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_pub.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_sec.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_bad.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_pub.png
+	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 	-rm -f $(kde_datadir)/geheimnis/toolbar/importKey.png
 	-rm -f $(kde_datadir)/geheimnis/toolbar/keyInfo.png
 	-rm -f $(kde_datadir)/geheimnis/toolbar/km.png

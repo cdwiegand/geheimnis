@@ -431,102 +431,102 @@ install-data-local:
 #>- 	$(INSTALL_DATA) $(srcdir)/genKeys.png $(kde_datadir)/geheimnis/toolbar/genKeys.png
 #>+ 1
 	$(INSTALL_DATA) $(srcdir)/genKeys.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/genKeys.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(kde_datadir)/geheimnis/pics/icon_key_bad.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(kde_datadir)/geheimnis/icons/icon_key_bad.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_bad.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_bad.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(kde_datadir)/geheimnis/icons/icon_key_disabled.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_disabled.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_disabled.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(kde_datadir)/geheimnis/pics/icon_key_expired.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(kde_datadir)/geheimnis/icons/icon_key_expired.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_expired.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_expired.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(kde_datadir)/geheimnis/icons/icon_key_pub2.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub2.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_pub2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(kde_datadir)/geheimnis/pics/icon_key_pub.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(kde_datadir)/geheimnis/icons/icon_key_pub.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_pub.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(kde_datadir)/geheimnis/icons/icon_key_revoked.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_revoked.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_revoked.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(kde_datadir)/geheimnis/pics/icon_key_sec.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(kde_datadir)/geheimnis/icons/icon_key_sec.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_sec.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(kde_datadir)/geheimnis/pics/icon_name_bad.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(kde_datadir)/geheimnis/icons/icon_name_bad.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_bad.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_bad.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(kde_datadir)/geheimnis/icons/icon_name_pub2.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub2.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_pub2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(kde_datadir)/geheimnis/pics/icon_name_pub.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(kde_datadir)/geheimnis/icons/icon_name_pub.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_pub.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(kde_datadir)/geheimnis/pics/icon_name_sec.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(kde_datadir)/geheimnis/icons/icon_name_sec.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_sec.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_sec.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(kde_datadir)/geheimnis/icons/icon_sig_bad.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_bad.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_bad.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(kde_datadir)/geheimnis/icons/icon_sig_pub.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub.png
-#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_pub.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/icons/
 #>+ 1
-	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
-#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/icons/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 #>+ 1
-	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 #>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
 #>+ 1
 	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
@@ -664,54 +664,54 @@ uninstall-local:
 #>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/genKeys.png
 #>+ 1
 	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/genKeys.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_bad.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_bad.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_disabled.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_disabled.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_expired.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_disabled.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_expired.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_expired.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_expired.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_pub2.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub2.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_pub.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_pub2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_pub.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_pub.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_revoked.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_revoked.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_revoked.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_sec.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_key_sec.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_bad.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_key_sec.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_bad.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_bad.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_pub2.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub2.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_pub.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_pub2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_pub.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_sec.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_pub.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_name_sec.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_sec.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_name_sec.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_bad.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_bad.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_pub.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub.png
-#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_pub.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 #>+ 1
-	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 #>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/importKey.png
 #>+ 1
 	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/importKey.png

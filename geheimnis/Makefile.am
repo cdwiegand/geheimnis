@@ -13,9 +13,18 @@ EXTRA_DIST = geheimnisui.rc geheimnis.desktop bdebug.h be_base.h be_gpg.cpp be_g
 install-data-local:
 	$(mkinstalldirs) $(kde_appsdir)/Applications/
 	$(INSTALL_DATA) $(srcdir)/geheimnis.desktop $(kde_appsdir)/Applications/geheimnis.desktop
+	$(mkinstalldirs) $(kde_icondir)/
+	$(INSTALL_DATA) $(srcdir)/hi16-app-geheimnis.xpm $(kde_icondir)/hi16-app-geheimnis.xpm
+	$(mkinstalldirs) $(kde_icondir)/
+	$(INSTALL_DATA) $(srcdir)/hi22-app-geheimnis.xpm $(kde_icondir)/hi22-app-geheimnis.xpm
+	$(mkinstalldirs) $(kde_icondir)/
+	$(INSTALL_DATA) $(srcdir)/hi32-app-geheimnis.xpm $(kde_icondir)/hi32-app-geheimnis.xpm
 
 uninstall-local:
 	-rm -f $(kde_appsdir)/Applications/geheimnis.desktop
+	-rm -f $(kde_icondir)/hi16-app-geheimnis.xpm
+	-rm -f $(kde_icondir)/hi22-app-geheimnis.xpm
+	-rm -f $(kde_icondir)/hi32-app-geheimnis.xpm
 
 ####### kdevelop will overwrite this part!!! (end)############
 # These paths are KDE specific. Use them:

@@ -789,11 +789,38 @@ install-data-local:
 #>- 	$(INSTALL_DATA) $(srcdir)/geheimnis.desktop $(kde_appsdir)/Applications/geheimnis.desktop
 #>+ 1
 	$(INSTALL_DATA) $(srcdir)/geheimnis.desktop $(DESTDIR)$(kde_appsdir)/Applications/geheimnis.desktop
+#>- 	$(mkinstalldirs) $(kde_icondir)/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/
+#>- 	$(INSTALL_DATA) $(srcdir)/hi16-app-geheimnis.xpm $(kde_icondir)/hi16-app-geheimnis.xpm
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/hi16-app-geheimnis.xpm $(DESTDIR)$(kde_icondir)/hi16-app-geheimnis.xpm
+#>- 	$(mkinstalldirs) $(kde_icondir)/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/
+#>- 	$(INSTALL_DATA) $(srcdir)/hi22-app-geheimnis.xpm $(kde_icondir)/hi22-app-geheimnis.xpm
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/hi22-app-geheimnis.xpm $(DESTDIR)$(kde_icondir)/hi22-app-geheimnis.xpm
+#>- 	$(mkinstalldirs) $(kde_icondir)/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_icondir)/
+#>- 	$(INSTALL_DATA) $(srcdir)/hi32-app-geheimnis.xpm $(kde_icondir)/hi32-app-geheimnis.xpm
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/hi32-app-geheimnis.xpm $(DESTDIR)$(kde_icondir)/hi32-app-geheimnis.xpm
 
 uninstall-local:
 #>- 	-rm -f $(kde_appsdir)/Applications/geheimnis.desktop
 #>+ 1
 	-rm -f $(DESTDIR)$(kde_appsdir)/Applications/geheimnis.desktop
+#>- 	-rm -f $(kde_icondir)/hi16-app-geheimnis.xpm
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_icondir)/hi16-app-geheimnis.xpm
+#>- 	-rm -f $(kde_icondir)/hi22-app-geheimnis.xpm
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_icondir)/hi22-app-geheimnis.xpm
+#>- 	-rm -f $(kde_icondir)/hi32-app-geheimnis.xpm
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_icondir)/hi32-app-geheimnis.xpm
 
 messages: rc.cpp
 	LIST=`find . -name \*.h -o -name \*.hh -o -name \*.H -o -name \*.hxx -o -name \*.hpp -o -name \*.cpp -o -name \*.cc -o -name \*.cxx -o -name \*.ecpp -o -name \*.C`; \

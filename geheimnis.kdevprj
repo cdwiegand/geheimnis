@@ -355,20 +355,20 @@ type=DATA
 
 [geheimnis/hi16-app-geheimnis.xpm]
 dist=true
-install=false
-install_location=
+install=true
+install_location=$$(kde_icondir)/hi16-app-geheimnis.xpm
 type=DATA
 
 [geheimnis/hi22-app-geheimnis.xpm]
 dist=true
-install=false
-install_location=
+install=true
+install_location=$$(kde_icondir)/hi22-app-geheimnis.xpm
 type=DATA
 
 [geheimnis/hi32-app-geheimnis.xpm]
 dist=true
-install=false
-install_location=
+install=true
+install_location=$$(kde_icondir)/hi32-app-geheimnis.xpm
 type=DATA
 
 [geheimnis/icons/Makefile.am]
@@ -433,97 +433,97 @@ type=DATA
 [geheimnis/icons/icon_key_bad.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_bad.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_bad.png
 type=DATA
 
 [geheimnis/icons/icon_key_disabled.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_disabled.png
 type=DATA
 
 [geheimnis/icons/icon_key_expired.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_expired.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_expired.png
 type=DATA
 
 [geheimnis/icons/icon_key_pub.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_pub.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_pub.png
 type=DATA
 
 [geheimnis/icons/icon_key_pub2.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_pub2.png
 type=DATA
 
 [geheimnis/icons/icon_key_revoked.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_revoked.png
 type=DATA
 
 [geheimnis/icons/icon_key_sec.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_sec.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_sec.png
 type=DATA
 
 [geheimnis/icons/icon_key_sec_def.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_key_sec_def.png
 type=DATA
 
 [geheimnis/icons/icon_name_bad.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_name_bad.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_name_bad.png
 type=DATA
 
 [geheimnis/icons/icon_name_pub.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_name_pub.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_name_pub.png
 type=DATA
 
 [geheimnis/icons/icon_name_pub2.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_name_pub2.png
 type=DATA
 
 [geheimnis/icons/icon_name_sec.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_name_sec.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_name_sec.png
 type=DATA
 
 [geheimnis/icons/icon_sig_bad.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_sig_bad.png
 type=DATA
 
 [geheimnis/icons/icon_sig_pub.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_sig_pub.png
 type=DATA
 
 [geheimnis/icons/icon_sig_pub2.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_sig_pub2.png
 type=DATA
 
 [geheimnis/icons/icon_sig_sec.png]
 dist=true
 install=true
-install_location=$$(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+install_location=$$(kde_datadir)/geheimnis/icons/icon_sig_sec.png
 type=DATA
 
 [geheimnis/icons/importKey.png]

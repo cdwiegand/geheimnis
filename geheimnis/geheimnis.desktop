@@ -2,8 +2,8 @@
 [KDE Desktop Entry]
 Type=Application
 Exec=geheimnis -caption "%c" %i %m  
-Icon=geheimnis.xpm
-MiniIcon=geheimnis.xpm
+Icon=hi32-app-geheimnis.xpm
+MiniIcon=hi16-app-geheimnis.xpm
 DocPath=geheimnis/index.html
 Comment=
 Comment[de]=
