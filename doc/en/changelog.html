@@ -1,0 +1,407 @@
+<html><head><title>Geheimnis Documentation - ChangeLog</title></head><body>
+<h1>Geheimnis ChangeLog</h1>
+<p>If you've sent in a patch and I don't list it here, please <a href="mailto:cwiegand@urgentmail.com">contact me via email</a>.</p>
+<hr>
+<ul>
+
+<li>1.97:
+<ul>
+	<li>Chris: Re-added docking, via the --dock option.
+	<li>Chris: Added using curl to get keys from the server.
+	<li>Chris: Fixed numerous bugs, gui and non-gui.
+	<li>Chris: Re-added documentation.
+	<li>Chris: Merged geheimniskeepopen into main binary - call as "geheimnis keepopen"
+	<li>Chris: Fixed bug with progress window disappearing unnecessarily - Thanks to Volker Augustin!
+</ul>
+
+<li>1.96:
+<ul>
+	<li>Added honor http proxy for GnuPG users
+	<li>Fixed warning with use of tmpnam / mktemp. Switched to mkstemp - much safer.
+	<li>Fixed memory leak associated with getSafeTmpName().
+	<li>Fixed keyserver option not working - Thanks to Neil Ferguson!
+	<li>Fixed strncat error - Thanks to Andreas Pour!
+	<li>Fixed DND events with KDE 2.x - Thanks to Christopher Drexler!
+	<li>Fixed incorrect subkey type (reported parent key's type, not subkey's type)
+</ul>
+
+<li>1.14:
+<ul>
+	<li>Stefan: Set GnuPG verbose during encryption/decryption/verify
+	<li>Stefan: Default for files set to clipboard when using geheimnisdocked
+	<li>Stefan: Pop-up dialog after decryption/encryption only when using outgoing clipboard
+	<li>Stefan: Removed autoclose of geheimniskeepopen
+</ul>
+
+<li>1.13:
+<ul>
+	<li>Stefan: Fixed error during linking of geheimnisdocked
+</ul>
+
+<li>1.05:
+<ul>
+	<li>Chris: Introduced constructors for all key classes
+	<li>Stefan: Display of disabled keys in Key Management
+	<li>Stefan: Added subkey loading with PGP-5.0i
+	<li>Stefan: Display of revoked keys in Key Management
+	<li>Chris: Close kPGPKeyAdd when done
+</ul>
+
+<li>1.02:
+<ul>
+	<li>Stefan: Display of expired keys in Key Management
+	<li>Chris/Stefan: Display of creation date and expire date in Key Info
+	<li>Stefan: Fixed display of fingerprints
+	<li>gorf: Patch to prevent gpg zombies
+</ul>
+
+<li>1.0 Beta 1:
+<ul>
+	<li>Stefan/Chris: Removed all user-visible const strings that made
+sense for translation
+	<li>Stefan/tftp: Updated russian and
+german translations.
+	<li>Chris: Changed Key Management to default to (none selected) for
+profile
+	<li>Chris: Fixed default in preferences for terminal to konsole
+(from kvt)
+	<li>Chris: Played with Add Key... dialog to pretty it up.
+	<li>Fixed bug where no profile selected would crash Encryption and
+Decryption.
+</ul>
+
+<li>0.97:
+<ul>
+	<li>Stefan: Fixed logic in kPGPEncrypt
+	<li>Chris: Rearranged kPGPEncrypt and kPGPDecrypt GUI
+	<li>Chris: Added "Open Geheimnis" to docking menu.
+	<li>Chris: Rearranged (and possibly broke) logic in kPGPEncrypt
+	<li>Chris: Worked on documentation (surprise!)
+</ul>
+
+<li>0.94-0.96:
+<ul>
+	<li>Stefan: Added updated German translation.
+	<li>Chris: Fixed profileList problem in kPGPKeys with one profile
+	<li>Chris: Moved to geheimnis.sourceforge.net
+	<li>Chris: Re-arranged options in kPGPEncrypt for more intuitive interface.
+</ul>
+
+<li>0.93:
+<ul>
+	<li>Chris: Added Global prefs.
+	<li>Stefan: Fixed problem with more than ~10 keys with command lines.
+	<li>Chris: Fixed ~ problem in keyring paths.
+	<li>Chris: Fixed clipboard problems (I hope)
+</ul>
+
+<li>0.91:
+<ul>
+	<li>Chris: Added a right-click to the Key Management window.
+	<li>Chris: Fixed removing a profile.
+	<li>Chris: Reformatted _() to i18n() for translation (finished, I hope!)
+	<li>Chris: Changed tmpnam() to mkstemp() for security...
+	<li>Chris: Removed the progress bar in the keyring loading - it didn't work and sometimes caused the window to disappear.
+	<li>Chris: Added the ability to import keys - Key Management should be finished now.
+</ul>
+
+<li>0.90:
+<ul>
+	<li>Chris: Changed geheimniskeepopen so if errorcode = 0 then it closes on it's own.
+	<li>Holger: Fixed keyring saving for PGP 6.5, PGP 5.0.
+	<li>Chris: Changed all _()'s to i18n()...
+</ul>
+
+<li>0.87:
+<ul>
+	<li>Stefan: Fixed PGP 5.0 Keyring code
+  <li>Stefan: Merged in PGP 6.5 code
+  <li>Chris: Added default -e in Global Prefs for terminal if no "-" option specified.
+  <li>Chris: Changed default for Terminal from kvt to konsole as per KDE 1.1 specs.
+  <li>Chris: Completed merging kPGPDocked code into kPGP[En|De]crypt.
+  <li>Chris: Started work on making separate wShowKeys widget from kPGPKeys for code reuse.
+  <li>Brian Galbraith: Requested showing fingerprint / keyid in kPGP[En|De]crypt - Chris added.
+	<li>Chris: Refitted kPGP[En|De]crypt to use --clipboard with myClipboard class.
+</ul>
+
+<li>0.83/0.82:
+<ul>
+	<li>Chris: Fixed new profiles window
+	<li>Chris: Expanded drastically the Key Properties window.
+</ul>
+
+<li>0.80:
+<ul>
+	<li>FIX: Fixed Makefiles / configure scripts.
+	<li>Chris: Fixed Global Prefs - now works.
+	<li>Stefan: Added PGP 6, PGP 5, and GnuPG trust code
+	<li>Chris: Add new Key Properties window - will work more on later
+	<li>Chris: Fixed menu option "Key Info" in Key Management.
+</ul>
+
+<li>0.70 / 0.69:
+<ul>
+	<li>Fixed Makefiles / *.kdevprj files.
+	<li>Merged GeheimnisDocked -> Geheimnis. Now, type --dock to get dock widget.
+	<li>Stefan: Merged trust patches for PGP 2 and kPGPKeys and myProfile.
+</ul>
+
+<li>0.68:
+<ul>
+	<li>Chris: Added columns, internal code for column selection in Key Management
+	<li>Chris: Fixed internal API for trust vs. validity.
+	<li>Stefan: Added validity loading for PGP 2.6.
+</ul>
+
+<li>0.67: 
+<ul>
+	<li>Stefan: Fixed geheimnistools launching.
+</ul>
+
+<li>0.66: 15 Aug 1999
+<ul>
+	<li>Chris: Changed geheimnis_* to geheimnis*, removing _.
+</ul>
+
+<li>0.65: 15 Aug 1999
+<ul>
+	<li>Chris: Changed Profile Management, I'm happy with it now.
+	<li>Stefan/Chris: Reverted back to 0.61's Decrypt and Encrypt dialogs.
+	<li>Chris: Added PGP 6.5 to default profiles (only installed if new user).
+</ul>
+
+<li>0.62: 31 Jul 1999
+<ul>
+	<li>Chris: Initial support for PGP 6.5: Decryption should work now.
+	<li>Stefan: Fixed lots of little bugs in Key Management.
+	<li>Chris: Fixed widget layout in Decrypt and Encrypt windows.
+	<li>Chris: Added more support for Profile Management, still missing Save ability.
+</ul>
+
+<li>0.60: 28 Jun 1999
+<ul>
+	<li>Chris: Fixed PGP5 segfault with loading keyring with invalid or
+absent PGP 5 binary.
+	<li>Stefan: Fixed location of geheimnis_keepopen.
+	<li>Stefan: Fixed PGP2 bug with clearsigning.
+	<li>Stefan: Fixed GPG bug with encryption.
+	<li>Stefan: Fixed email extracting function (extra > at end).
+	<li>Stefan: Fixed secret vs. public key types in PGP2.
+	<li>Chris: Moving more functions from kPGP* to myProfile.
+	<li>Chris: Fixed kPGPProfileEdit2 constructor.
+	<li>Chris: Fixed PGP5: Now absence of PGP2, PGP5, and GPG won't
+crash the program.
+</ul>
+
+<li>0.59: 21 June 1999
+<ul>
+	<li>Fixed PGP 2 importKey bug.
+	<li>Merged kPGPProfile and kPGPKeyring into myProfile.
+	<li>Moved most of the kPGPKeys::* functions into myProfile::*.
+</ul>
+
+<li>0.56: 12 June 1999
+<ul>
+	<li>Just about done with QString conversion.
+	<li>Incorporated some more patches from Stefan Suchi.
+	<li>Keyring loading restructured (again), mostly optimizations
+</ul>
+
+<li>0.55: 24 May 1999
+<ul>
+	<li>Reworked 60% of the char *s converting to QString.
+	<li>Moved kPGPProfile functions into misc.cpp, kPGPProfile is just a simple class now.
+	<li>Fixed a few keyring problems Stefan reported.
+</ul>
+
+<li>0.54: 1 May 1999 or so
+<ul>
+	<li>Stefan: Fixed some GPG and PGP2 keyring loading calls.
+	<li>Chris: Found a typo - GPG loaded secret keyring instead of public and vice-versa.
+	<li>Chris: Fixed a problem with building on a clean Debian system (I build
+my own QT/KDE)
+</ul>
+
+<li>0.53: 03 May 1999<blockquote>
+Fixed some of the bugs with the renaming, hopefully the keyring code problems as well.
+</blockquote>
+
+<li>0.52: 18 April 1999<blockquote>
+
+First off, I've renamed kPGPShell to Geheimnis. They're kinda discouraging programs
+that start with a K, just because there are so many and us programmers are going
+a little overboard with K things (kPGPShell, kfm, k-this, k-that, etc..).
+Okay, I think I've fixed an idle() call bug, and some miscellaneous bugs. I'm 
+hoping to get a kPGPSelectKey class working, and perhaps checkSanity() to
+verify the version of a PGP program. Fixed a PGP 5 issue with revoking a signature.
+Adding sanity checking... Added documentation. Added a nag screen for the license
+(GPL). I want people to understand, there is NO WARRANTY. :)
+</blockquote>
+
+<li>0.50: 6 April 1999<blockquote>
+
+Well, it was *supposed* to be a stable release. Instead, it took long enough that I just had
+to add some new features. In kPGPEncrypt, if you turn off necessary
+features, it intelligently asks you what you want to do. This should be
+pretty stable. I've also added Cancel buttons to just about every window
+EXCEPT key management. I'm still trying to decide how to do that one. Key
+Management's pretty much done except for signing, which is slated for the
+0.6x series...
+</blockquote>
+
+<li>0.47: 3 April 1999<blockquote>
+
+Fixed some PGP 2 and one GPG problem, mostly in kPGPEncrypt, and two in kPGPDecrypt. Improved
+keyring loading. PGP 2 doesn't support multiple keyrings, but does support multiple names,
+this is reflected in the program now. Any Day Now I'm going to get around to putting in
+Prefs and Profiles dialogs...
+</blockquote>
+
+<li>0.45: Mar 29 1999<blockquote>
+
+Okay, I've really added most of the key management stuff, only signing isn't done yet.
+That's because I need another widget (kPGPSelector) to select the signing
+key, and I don't have that yet. Everything else, even to revoking keys, or
+uploading them to a keyserver, is done. Eventually, I want to do things like
+asking about uploading new keys or just-revoked keys, trust assignment,
+properties, etc. Also, I think I've squashed most of the core dumps and segfaults.
+</blockquote>
+
+<li>0.42: Never released<blockquote>
+
+Can you say Key Management? I knew you could. Almost everything in Key Management is
+now enabled, I'm still working down on chasing down command-line-order bugs.
+Moved keepopen binary to $(KDEDIR)/apps/kPGPShell so that it couldn't possibly conflict. 
+Fixed GnuPG double-listing bug for keyring loading. Still looking at DND bugs... 
+I now clear the Secret Key combo box in encrypt when changing profiles. Also, I've added
+preliminary support for using Harmony insetad of QT. (Harmony is a (L)GPL'ed-QT clone.)
+</blockquote>
+
+<li>0.41: 25 Mar 1999<blockquote>
+
+Added clearsign. Fixed GnuPG keyring loading (although allversions through 0.95 load 
+names/sigs twice... I may fix it in my code, but it should probably be fixed in GnuPG.
+Resolve to note changes better (I'm working on 0.42 while I write this). Fixed language
+support for piping PGP 5 and PGP 2. (Now it's set to english.) Also I'm using BSD's install
+not /bin/cp. This is better.
+</blockquote>
+
+<li>0.40: 21 Mar 1999<blockquote>
+
+Okay, it's taken awhile to get the changes in. I've fixed the PGP 2 code for sure,
+the GPG code still stinks, but I'm working on it. I hate QT's inability to use pixels,
+their QHBoxLayout and QGridLayout all require percentages, and I don't want percentages,
+I want tables where I can freeze columns and rows at a certain height and let others
+grow, something QT doesn't do (yet?). So, in kPGPKeys, I'm manually managing the 
+layout. I'm sorry, but moving the toolbar/menubar doesn't work, even if I did use
+the stupid Q*Layout series, I'll see about fixing that sometime in the future.
+Created TODO.
+</blockquote>
+
+<li>0.35: 12 Mar 1999<blockquote>
+
+Added profile code! Added keyring support! Moved code around to better
+utiliize C++ coding standards. I'm planning on having basic key management by
+0.4.
+</blockquote>
+
+<li>0.21: 28 Feb 1999<blockquote>
+
+Added keyring code! Can now load (theoretically) keyrings and choose keys.
+Changed to using GNU gcc / g++ instead of local cc/c++, on Sun and HP, this
+won't work right.
+</blockquote>
+
+<li>0.2:  20 Feb 1999<blockquote>
+
+Added a command-line so that calling kPGPShell <filename> will act as if you
+dropped that file onto the main window, except it doesn't show the main
+window. Made my own ./configure script so more people can use my program.
+</blockquote>
+
+<li>0.18: 15 Feb 1999<blockquote>
+
+Well, I've dropped all plans to ever use, in any program I make, automake or
+autoconf. They're nothing but problems. It can't find
+/usr/lib/gcc-lib/egcs-yadayada bitch bitch moan moan. You'd think that
+./configure actually detected things. Anyways, because of lost time
+wrestling with that, plans for 0.2 are delayed until end of February.
+</blockquote>
+
+<li>0.08: 3 Jan 1999<blockquote>
+
+I'm releasing this one on the internet, decrypt works fine now, I just have
+to add i18n support (easy), a drop zone (dunno about this one..., have to
+look into overloading...), and a cancel button on the decrypt window.
+</blockquote>
+
+<li>0.06: 2 Jan 1999<blockquote>
+
+Okay, finally clinched that irritating "which version of pgp did the user
+select" question/bug. I also figured out that the QGridLayout works *much*
+better when you resize the window. Oy. I will admit, though, that
+documentation is the best I've ever seen for programming, although they
+could have more examples. I'm going to work on a DND-type zone on the main
+window.
+</blockquote>
+
+<li>0.05: 27 Dec 1998<blockquote>
+
+Cleaned up code a little, changed version-dependant prompts to use
+MY_VERSION. Looked at using autoconf/automake, ran screaming away. Won't try
+that again for quite awhile. No documentation to speak of (just WHO uses
+info?!), looks like Yet Another Foreign Language To Learn from those
+wonderful folks at GNU, and doesn't do my program one cent of benefit, just
+for a bloody Makefile. Over 300K of that folder was useless junk. Oy...
+Nonetheless, I think I'm going to be forced to use it once my program
+(hopefully) takes off...maybe one of those wonderful mailing lists will let
+me on long enough to ask why... I'm working on an icon, mimetype file, and
+kdelnk file for installation. Anyone want to clean up the interface a
+little? I'm new to KDE programming.
+</blockquote>
+
+<li>0.04: 20 Dec 1998
+
+? 
+
+<li>0.03: 14 Dec 1998<blockquote>
+
+Decrypt works, correctly, for the first time! Ya!!! I've made a little
+proggie called keepopen, that, once the parent program is done, loops
+forever. That's because since kvt/konsole/xterm/etc... close once the
+program is done, users wouldn't see what PGP/GPG returned at the very
+end...so, this program keeps the window open until the user kills/closes it.
+<P>
+This program is going to change BIG TIME for 0.1, I'm going to use kapptemplate
+0.21 (I have it now, but I need to pick it apart so I can figure out how it
+works.) So, if you send in patches, please try to make it portable code, I'm
+also learning C++ this way. (I know C, I just want to do GUI stuff, and
+GTK's kinda messy, IMHO).
+</blockquote>
+
+<li>0.01: 7 Dec 1998<blockquote>
+
+Okay, this is the first release. It doesn't do much, it's mostly a POC
+(Proof of Concept) release. It is really hardcoded, but it has a menubar,
+menus, message boxes (Why doesn't GTK have these? Someone? Anyone?), and
+it's my first C++ program.
+<P>
+kPGPShell is intended to be in the same style as the PGP Shells of Windows
+(tm) 3.1, where you entered the details into the shell, and PGP ran in a DOS
+window on the side, except I'm going to use kvt instead of DOS. :)
+<P>
+I intend that by 0.1, encrypt and decrypt will be ready for use, and by 0.3,
+I'll have basic (!) key management. Hopefully, by 0.5, encrypt/decrypt
+(which also includes signing and verifying, of course) will be rock-solid,
+and I can work towards 1.0 which will have 100% key management.
+</blockquote>
+
+</ul>
+
+<hr>
+
+<p>Legal stuff:
+	Windows is a trademark of Microsoft, Inc.
+	PGP is a trademark of PGP, Inc.</p>
+</body></html>
+

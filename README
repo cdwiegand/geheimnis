@@ -1,0 +1,18 @@
+If you run a CVS version, run
+  make -f Makefile.dist ; ./configure ; make ; make install
+
+Note: This is for KDE 3.x only! KDE 2 will NOT compile this!
+
+If you compile from a tar ball, run only
+  ./configure ; make ; make install
+
+Be sure to set your QTDIR and KDEDIR accordingly:
+If you use sh/bash:
+  export KDEDIR=/path/to/kde/dir
+  export QTDIR=/path/to/qt/dir
+If you use csh/tcsh:
+  setenv KDEDIR /path/to/kde/dir
+  setenv QTDIR /path/to/qt/dir
+
+http://geheimnis.sourceforge.net/
+

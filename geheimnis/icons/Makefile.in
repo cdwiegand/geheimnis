@@ -1,0 +1,803 @@
+# Makefile.in generated automatically by automake 1.5 from Makefile.am.
+# KDE tags expanded automatically by am_edit - $Revision$ 
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+####### kdevelop will overwrite this part!!! (begin)##########
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+AMTAR = @AMTAR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUTODIRS = @AUTODIRS@
+AWK = @AWK@
+CC = @CC@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
+DOXYGEN = @DOXYGEN@
+DOXYGEN_PROJECT_NAME = @DOXYGEN_PROJECT_NAME@
+DOXYGEN_PROJECT_NUMBER = @DOXYGEN_PROJECT_NUMBER@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+ECHO = @ECHO@
+EXEEXT = @EXEEXT@
+FRAMEWORK_COREAUDIO = @FRAMEWORK_COREAUDIO@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KDECONFIG = @KDECONFIG@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_HAS_DOXYGEN = @KDE_HAS_DOXYGEN@
+KDE_HAVE_DOT = @KDE_HAVE_DOT@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_MT_LDFLAGS = @KDE_MT_LDFLAGS@
+KDE_MT_LIBS = @KDE_MT_LIBS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+LEX = @LEX@
+LEXLIB = @LEXLIB@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTIL = @LIBUTIL@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_KAB = @LIB_KAB@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEPRINT = @LIB_KDEPRINT@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_POLL = @LIB_POLL@
+LIB_QPE = @LIB_QPE@
+LIB_QT = @LIB_QT@
+LIB_QTOPIA = @LIB_QTOPIA@
+LIB_SMB = @LIB_SMB@
+LIB_X11 = @LIB_X11@
+LIB_XEXT = @LIB_XEXT@
+LN_S = @LN_S@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NOOPT_CFLAGS = @NOOPT_CFLAGS@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QTDOCDIR = @QTDOCDIR@
+QTE_NORTTI = @QTE_NORTTI@
+QTOPIA_INCLUDES = @QTOPIA_INCLUDES@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+RC = @RC@
+REPO = @REPO@
+SETUIDFLAGS = @SETUIDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+WOVERLOADED_VIRTUAL = @WOVERLOADED_VIRTUAL@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+am__include = @am__include@
+am__quote = @am__quote@
+idldir = @idldir@
+install_sh = @install_sh@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_styledir = @kde_styledir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kde_widgetdir = @kde_widgetdir@
+micodir = @micodir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+EXTRA_DIST = addName.png application_pgp.png decrypt.png disableKey.png docked.png editKey.png encrypt.png exportKey.png genKeys.png icon_key_bad.png icon_key_disabled.png icon_key_expired.png icon_key_pub2.png icon_key_pub.png icon_key_revoked.png icon_key_sec_def.png icon_key_sec.png icon_name_bad.png icon_name_pub2.png icon_name_pub.png icon_name_sec.png icon_sig_bad.png icon_sig_pub2.png icon_sig_pub.png icon_sig_sec.png importKey.png keyInfo.png km.png prefs.png removeKey.png revokeKey.png revokeSig.png signKey.png trust_0.png trust_1.png trust_2.png trust_3.png trust_4.png valid_0.png valid_1.png valid_2.png valid_3.png valid_4.png 
+subdir = geheimnis/icons
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = $(top_builddir)/config.h
+CONFIG_CLEAN_FILES =
+DIST_SOURCES =
+DIST_COMMON = Makefile.am Makefile.in
+#>- all: all-am
+#>+ 1
+all: docs-am  all-am
+
+.SUFFIXES:
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+	-rm -f libtool
+$(srcdir)/Makefile.in:  Makefile.am  $(top_srcdir)/configure.in $(ACLOCAL_M4)
+#>- 	cd $(top_srcdir) && \
+#>- $(AUTOMAKE) --gnu  geheimnis/icons/Makefile
+#>+ 3
+	cd $(top_srcdir) && \
+	$(AUTOMAKE) --gnu  geheimnis/icons/Makefile
+	cd $(top_srcdir) && perl admin/am_edit geheimnis/icons/Makefile.in
+Makefile:  $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	CONFIG_HEADERS= CONFIG_LINKS= \
+	CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+uninstall-info-am:
+tags: TAGS
+TAGS:
+
+
+#>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=addName.png application_pgp.png 
+
+DISTFILES= $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+top_distdir = ../..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	if test -f $$file; then d=.; else d=$(srcdir); fi; \
+	dir=`echo "$$file" | sed -e 's,/[^/]*$$,,'`; \
+	if test "$$dir" != "$$file" && test "$$dir" != "."; then \
+	$(mkinstalldirs) "$(distdir)/$$dir"; \
+	fi; \
+	if test -d $$d/$$file; then \
+	cp -pR $$d/$$file $(distdir) \
+	|| exit 1; \
+	else \
+	test -f $(distdir)/$$file \
+	|| cp -p $$d/$$file $(distdir)/$$file \
+	|| exit 1; \
+	fi; \
+	done
+check-am: all-am
+check: check-am
+all-am: Makefile
+
+installdirs:
+
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+uninstall: uninstall-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	`test -z '$(STRIP)' || \
+	echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES) stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+#>- clean: clean-am
+#>+ 1
+clean: kde-rpo-clean  clean-am
+
+clean-am: clean-generic clean-libtool mostlyclean-am
+
+distclean: distclean-am
+
+distclean-am: clean-am distclean-generic distclean-libtool
+
+dvi: dvi-am
+
+dvi-am:
+
+info: info-am
+
+info-am:
+
+install-data-am: install-data-local
+
+install-exec-am:
+
+install-info: install-info-am
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-am
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-am
+
+mostlyclean-am: mostlyclean-generic mostlyclean-libtool
+
+uninstall-am: uninstall-info-am uninstall-local
+
+.PHONY: all all-am check check-am clean clean-generic clean-libtool \
+	distclean distclean-generic distclean-libtool distdir dvi \
+	dvi-am info info-am install install-am install-data \
+	install-data-am install-data-local install-exec install-exec-am \
+	install-info install-info-am install-man install-strip \
+	installcheck installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-generic \
+	mostlyclean-libtool uninstall uninstall-am uninstall-info-am \
+	uninstall-local
+
+
+install-data-local:
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/addName.png $(kde_datadir)/geheimnis/toolbar/addName.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/addName.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/addName.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/application_pgp.png $(kde_datadir)/geheimnis/pics/application_pgp.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/application_pgp.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/application_pgp.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/decrypt.png $(kde_datadir)/geheimnis/pics/decrypt.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/decrypt.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/decrypt.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/disableKey.png $(kde_datadir)/geheimnis/toolbar/disableKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/disableKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/disableKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/docked.png $(kde_datadir)/geheimnis/pics/docked.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/docked.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/docked.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/editKey.png $(kde_datadir)/geheimnis/toolbar/editKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/editKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/editKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/encrypt.png $(kde_datadir)/geheimnis/toolbar/encrypt.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/encrypt.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/encrypt.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/exportKey.png $(kde_datadir)/geheimnis/toolbar/exportKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/exportKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/exportKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/genKeys.png $(kde_datadir)/geheimnis/toolbar/genKeys.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/genKeys.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/genKeys.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(kde_datadir)/geheimnis/pics/icon_key_bad.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_bad.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_disabled.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(kde_datadir)/geheimnis/pics/icon_key_expired.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_expired.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_expired.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(kde_datadir)/geheimnis/pics/icon_key_pub.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_revoked.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_sec_def.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(kde_datadir)/geheimnis/pics/icon_key_sec.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_key_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(kde_datadir)/geheimnis/pics/icon_name_bad.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_name_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_bad.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_name_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(kde_datadir)/geheimnis/pics/icon_name_pub.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_name_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(kde_datadir)/geheimnis/pics/icon_name_sec.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_name_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_sec.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_sig_bad.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_sig_pub2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_sig_pub.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/icon_sig_sec.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/importKey.png $(kde_datadir)/geheimnis/toolbar/importKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/importKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/importKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/keyInfo.png $(kde_datadir)/geheimnis/toolbar/keyInfo.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/keyInfo.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/keyInfo.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/km.png $(kde_datadir)/geheimnis/toolbar/km.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/km.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/km.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/prefs.png $(kde_datadir)/geheimnis/toolbar/prefs.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/prefs.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/prefs.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/removeKey.png $(kde_datadir)/geheimnis/toolbar/removeKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/removeKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/removeKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/revokeKey.png $(kde_datadir)/geheimnis/toolbar/revokeKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/revokeKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/revokeKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/revokeSig.png $(kde_datadir)/geheimnis/toolbar/revokeSig.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/revokeSig.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/revokeSig.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/toolbar/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/
+#>- 	$(INSTALL_DATA) $(srcdir)/signKey.png $(kde_datadir)/geheimnis/toolbar/signKey.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/signKey.png $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/signKey.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/trust_0.png $(kde_datadir)/geheimnis/pics/trust_0.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/trust_0.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_0.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/trust_1.png $(kde_datadir)/geheimnis/pics/trust_1.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/trust_1.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_1.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/trust_2.png $(kde_datadir)/geheimnis/pics/trust_2.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/trust_2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/trust_3.png $(kde_datadir)/geheimnis/pics/trust_3.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/trust_3.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_3.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/trust_4.png $(kde_datadir)/geheimnis/pics/trust_4.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/trust_4.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_4.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/valid_0.png $(kde_datadir)/geheimnis/pics/valid_0.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/valid_0.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_0.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/valid_1.png $(kde_datadir)/geheimnis/pics/valid_1.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/valid_1.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_1.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/valid_2.png $(kde_datadir)/geheimnis/pics/valid_2.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/valid_2.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_2.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/valid_3.png $(kde_datadir)/geheimnis/pics/valid_3.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/valid_3.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_3.png
+#>- 	$(mkinstalldirs) $(kde_datadir)/geheimnis/pics/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_datadir)/geheimnis/pics/
+#>- 	$(INSTALL_DATA) $(srcdir)/valid_4.png $(kde_datadir)/geheimnis/pics/valid_4.png
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/valid_4.png $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_4.png
+
+uninstall-local:
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/addName.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/addName.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/application_pgp.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/application_pgp.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/decrypt.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/decrypt.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/disableKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/disableKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/docked.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/docked.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/editKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/editKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/encrypt.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/encrypt.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/exportKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/exportKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/genKeys.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/genKeys.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_bad.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_disabled.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_expired.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_expired.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_pub.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_pub.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_revoked.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec_def.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_key_sec.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_key_sec.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_bad.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_pub.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_pub.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_name_sec.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_name_sec.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_bad.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_pub.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/icon_sig_sec.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/importKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/importKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/keyInfo.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/keyInfo.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/km.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/km.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/prefs.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/prefs.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/removeKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/removeKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/revokeKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/revokeKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/revokeSig.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/revokeSig.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/toolbar/signKey.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/toolbar/signKey.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/trust_0.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_0.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/trust_1.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_1.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/trust_2.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/trust_3.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_3.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/trust_4.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/trust_4.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/valid_0.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_0.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/valid_1.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_1.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/valid_2.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_2.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/valid_3.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_3.png
+#>- 	-rm -f $(kde_datadir)/geheimnis/pics/valid_4.png
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_datadir)/geheimnis/pics/valid_4.png
+
+####### kdevelop will overwrite this part!!! (end)############
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 2
+docs-am:
+
+#>+ 6
+force-reedit:
+		cd $(top_srcdir) && \
+	$(AUTOMAKE) --gnu  geheimnis/icons/Makefile
+	cd $(top_srcdir) && perl admin/am_edit geheimnis/icons/Makefile.in
+
+
+#>+ 2
+final:
+	$(MAKE) all-am
+#>+ 2
+final-install:
+	$(MAKE) install-am
+#>+ 2
+no-final:
+	$(MAKE) all-am
+#>+ 2
+no-final-install:
+	$(MAKE) install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) admindir=$(top_srcdir)/admin -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo

@@ -1,0 +1,38 @@
+Please note: This version of Geheimnis **should** compile out of the box
+on KDE 3. It did at least on my RedHat 8.0 box. Your mileage may vary.
+
+-- Chris Wiegand
+20021011.185900
+
+--- old stuff follows --- thanks to Marc Mutz for the info! ---
+
+
+This are instructions to compile geheimnis-CVS on kde3:
+
+1. checkout geheimnis:
+export CVSROOT=:pserver:anonymous@cvs.geheimnis.sf.net:/cvsroot/geheimnis
+cvs co geheimnis_2
+cd geheimnis_2
+
+2. Compile and install all but the geheimnis subdir
+   (requires automake 1.3 and autoconf 2.13,
+    _exactly_ these versions, not "or better")
+make -f Makefile.dist && ./configure
+for i in doc po; do
+	(cd $i && make && su -c "make install")
+done
+
+3. import the geheimnis subdir into one of kde3's modules, e.g. kdenetwork:
+   <checkout (e.g.) kdenetwork; instructions on www.kde.org/anoncvs.html>
+   (requires automake 1.5 and autoconf 2.52!)
+cp -rax geheimnis_2/geheimnis kdenetwork
+cd kdenetwork
+make -f Makefile.cvs && ./configure
+cd geheimnis && make
+su -c "make install"
+
+Why is this so complicated? Because no-one bothers to write an
+app-template that works under kde2 _and_ kde3 :-(
+
+Also, geheimnis for kde3 will be imported into kdenonbeta soon, so
+there's no need to bother ourselves with this.

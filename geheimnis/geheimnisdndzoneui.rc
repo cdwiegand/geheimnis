@@ -1,0 +1,21 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="geheimnis dndzone" version="1">
+
+<MenuBar>
+	<Menu name="edit" noMerge="1"><text>&amp;Edit</text>
+		<Action name="edit_encrypt_sign"/>
+		<Action name="edit_decrypt_verify"/>
+		<Action name="edit_keymanagement"/>
+	</Menu>
+</MenuBar>
+
+<ToolBar name="dndZoneToolBar" noMerge="1" fullWidth="true"><text>Main Toolbar</text>
+	<Action name="edit_encrypt_sign"/>
+	<Action name="edit_decrypt_verify"/>
+	<Separator/>
+	<Action name="edit_keymanagement"/>
+	<Separator/>
+	<Action name="options_configure"/>
+</ToolBar>
+
+</kpartgui>

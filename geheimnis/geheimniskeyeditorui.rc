@@ -1,0 +1,178 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="geheimnis key editor" version="6">
+
+<MenuBar>
+	<Menu name="file" noMerge="1"><text>&amp;File</text>
+		<Action name="new_key_pair"/>
+		<Separator/>
+		<Action name="import_key"/>
+		<Action name="export_public_key"/>
+		<Separator/>
+		<Action name="file_close"/>
+	</Menu>
+	<Menu name="key"><text>&amp;Key</text>
+		<Action name="new_uid"/>
+		<Separator/>
+		<Action name="edit_key"/>
+		<Action name="toggle_enable_disable_key"/>
+		<Separator/>
+		<Action name="delete_key"/>
+		<Action name="revoke_key"/>
+		<Separator/>
+		<Action name="sign_key"/>
+	</Menu>
+	<Menu name="signature"><text>&amp;Signature</text>
+		<Action name="delete_sig"/>
+		<Action name="revoke_sig"/>
+	</Menu>
+	<Menu name="view"><text>&amp;View</text>
+		<Action name="select_profile"/>
+		<Action name="reload_keyring"/>
+		<Action name="key_properties"/>
+	</Menu>
+</MenuBar>
+
+<!-- This is the toolbar that contains the most important key
+	management operations: -->
+<ToolBar name="keyEditToolBar" noMerge="1" fullWidth="true">
+<text>Key Management Toolbar</text>
+	<Action name="new_key_pair"/>
+	<Action name="import_key"/>
+	<Action name="export_public_key"/>
+<!--	<Action name="import_secret_key"/>
+	<Action name="export_secret_key"/> -->
+	<Action name="key_properties"/>
+	<Action name="edit_key"/>
+	<Action name="toggle_enable_disable_key"/>
+	<Action name="delete_key"/>
+	<Action name="delete_sig"/>
+	<Action name="revoke_key"/>
+	<Action name="new_uid"/>
+	<Action name="sign_key"/>
+	<Action name="revoke_sig"/>
+	<Action name="reload_keyring"/>
+</ToolBar>
+
+<!-- This is the toolbar that contains the profile selector: -->
+<ToolBar name="profileToolBar" noMerge="1" fullWidth="false">
+<text>Profile Toolbar</text>
+	<Action name="select_profile_label"/>
+	<Action name="select_profile"/>
+</ToolBar>
+
+<!-- These are the popup menus for the list of keys -->
+<Menu name="keyListPopupKey"><!-- used when over a key: -->
+	<Action name="update_key"/>
+	<Action name="export_public_key"/>
+	<Separator/>
+	<Action name="key_properties"/>
+	<Action name="edit_key"/>
+	<Separator/>
+	<Action name="toggle_enable_disable_key"/>
+	<Action name="delete_key"/>
+	<Separator/>
+	<Action name="sign_key"/>
+</Menu>
+<Menu name="keyListPoupOwnKey"><!-- used when over own key: -->
+	<Action name="update_key"/>
+	<Action name="export_public_key"/>
+	<Separator/>
+	<Action name="key_properties"/>
+	<Action name="edit_key"/>
+	<Separator/>
+	<Action name="toggle_enable_disable_key"/>
+	<Action name="delete_key"/>
+	<Action name="revoke_key"/>
+</Menu>
+<Menu name="keyListPopupSig"><!-- used when over a sig: -->
+	<Action name="update_key"/>
+	<Separator/>
+	<Action name="key_properties"/>
+	<Action name="edit_key"/>
+	<Separator/>
+	<Action name="delete_sig"/>
+</Menu>
+<Menu name="keyListPopupUnknownSig"><!-- used when over an unknown sig: -->
+	<Action name="import_key"/>
+	<Separator/>
+	<Action name="delete_sig"/>
+</Menu>
+<Menu name="keyListPopupOwnSig"><!-- used when over own sig: -->
+	<Action name="update_key"/>
+	<Separator/>
+	<Action name="key_properties"/>
+	<Action name="edit_key"/>
+	<Separator/>
+	<Action name="delete_sig"/>
+	<Action name="revoke_sig"/>
+</Menu>
+
+<State name="StateNoProfile"/>
+	<enable>
+		<Action name="file_close"/>
+	</enable>
+	<disable><!-- everything else... -->
+		<Action name="new_key_pair"/>
+		<Action name="import_key"/>
+		<Action name="update_key"/>
+		<Action name="export_public_key"/>
+		<Action name="key_properties"/>
+		<Action name="edit_key"/>
+		<Action name="toggle_enable_disable_key"/>
+		<Action name="delete_key"/>
+		<Action name="delete_sig"/>
+		<Action name="new_uid"/>
+		<Action name="sign_key"/>
+		<Action name="revoke_key"/>
+		<Action name="revoke_sig"/>
+		<Action name="reload_keyring"/>
+		<Action name="select_profile_label"/>
+		<Action name="select_profile"/>
+	</disable>
+</State>
+<State name="StateNoSelection"/>
+	<enable>
+		<Action name="file_close"/>
+		<Action name="new_key_pair"/>
+		<Action name="import_key"/>
+		<Action name="reload_keyring"/>
+		<Action name="select_profile_label"/>
+		<Action name="select_profile"/>
+	</enable>
+	<disable><!-- everything else... -->
+		<Action name="update_key"/>
+		<Action name="export_public_key"/>
+		<Action name="key_properties"/>
+		<Action name="edit_key"/>
+		<Action name="toggle_enable_disable_key"/>
+		<Action name="delete_key"/>
+		<Action name="delete_sig"/>
+		<Action name="new_uid"/>
+		<Action name="sign_key"/>
+		<Action name="revoke_key"/>
+		<Action name="revoke_sig"/>
+	</disable>
+</State>
+<State name="StateSelection"/>
+	<enable><!--  enable everything for now, just as it was before -->
+		<Action name="file_close"/>
+		<Action name="new_key_pair"/>
+		<Action name="update_key"/>
+		<Action name="export_public_key"/>
+		<Action name="key_properties"/>
+		<Action name="edit_key"/>
+		<Action name="delete_key"/>
+		<Action name="new_uid"/>
+		<Action name="revoke_key"/>
+		<Action name="reload_keyring"/>
+		<Action name="select_profile_label"/>
+		<Action name="select_profile"/>
+		<Action name="import_key"/>
+		<Action name="toggle_enable_disable_key"/>
+		<Action name="delete_sig"/>
+		<Action name="sign_key"/>
+		<Action name="revoke_sig"/>
+	</enable>
+</State>
+
+</kpartgui>

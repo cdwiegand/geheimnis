@@ -1,0 +1,10 @@
+# KDE Config File  
+[KDE Desktop Entry]
+Type=Application
+Exec=geheimnis -dock -caption "%c" %i %m  
+Icon=geheimnis.xpm
+MiniIcon=geheimnis.xpm
+DocPath=geheimnis/index.html
+Comment=
+Terminal=0
+Name=Geheimnis Dock

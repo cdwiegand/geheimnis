@@ -1,0 +1,60 @@
+2002-10-11  Chris Wiegand <cdwiegand@users.sourceforge.net>
+  * Updated Geheimnis for building in KDE 3, will release as Geheimnis 2.0.
+
+  * Updated project file for Kdevelop 2.1.3
+
+2002-01-13  Chris Wiegand <cwiegand@users.sourceforge.net>
+	* Added option to use CURL to get keys from keyservers.
+
+	* Merged geheimniskeepopen into main binary - call as "geheimnis keepopen"
+
+	* Fixed bug with progress window disappearing unnecessarily - Thanks to Volker Augustin!
+
+2002-01-08  Chris Wiegand <cwiegand@users.sourceforge.net>
+	* Fixed warning with use of tmpnam / mktemp. Switched to mkstemp - much safer.
+
+	* Fixed memory leak associated with getSafeTmpName().
+
+	* Fixed keyserver option not working - Thanks to Neil Ferguson!
+
+	* Fixed strncat error - Thanks to Andreas Pour!
+
+	* Fixed DND events with KDE 2.x - Thanks to Christopher Drexler!
+
+	* Fixed incorrect subkey type (reported parent key's type, not subkey's type)
+
+	* Added honor http proxy for GnuPG users
+
+2001-03-15  Stefan Suchi <suchi@gmx.de>
+
+	* resized trust and valid icons
+
+	* fixed loading of key-list icons using kIconLoader
+
+	* fixed loading of toolbar icons using kIconLoader
+
+	* moved icons to KDE-2 conform directories /toolbar and /pics
+
+	* upgraded build machine (am_edit, ltconfig, etc.)
+
+2000-12-22  Bo Thorsen  <bo@suse.de>
+
+	* geheimnis/kPGPEncrypt.cpp (kPGPEncrypt): Use QString and not char *.
+
+	* geheimnis/kPGPDecrypt.cpp (kPGPDecrypt): Use QString and not char *.
+
+	* geheimnis/misc.cpp (droppedFile): Use QString and not char *. 
+
+	* geheimnis/main.cpp: Small changes in KCmdLineOptions.
+
+	* geheimnis/main.cpp: usage() had to go. Doesn't fit with
+	KCmdLineOptions.
+
+	* geheimnis/main.cpp (main): Make sure only one kind of action is
+	specified.
+
+	* geheimnis/main.cpp (main): Don't use KCmdLineArgs before KApplication
+	instance is created.
+
+	* geheimnis/main.cpp (main): KApplication is stackallocated.
+

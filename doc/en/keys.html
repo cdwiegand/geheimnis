@@ -1,0 +1,32 @@
+<html><head><title>Geheimnis Documentation</title></head><body>
+<h1>Key Management</h1>
+<hr>
+<p>Key Management is anything that deals with managing the public and
+private keys for your encryption program(s). Usually, you have at least one
+private key pair, and the public keys of people/groups which you correspond
+with.<p>
+
+<img src="keymanagement.xpm">
+
+<p>Keys are simple to remember:<ul>
+<li>If it's blue, and there are two keys, then it's your private key pair.
+<li>If it's green, it's valid.
+<li>If it's red, then it's not necessary valid (default setting)
+<li>If it's grayed-out, then it's been revoked by the owner, or has expired, and should not
+be used.
+</ul>
+
+Names are mostly the same, you see little "heads" instead of keys.
+Signatures are from other people who have signed that key, in effect
+saying, "I trust
+that this key I'm signing is valid." Signatures can be different colors from
+the keys they sign, because they may be known and valid, but the key they've
+signed for may not be.</p>
+
+<p>You can <a href="keys_adding.html">generate your own private key
+pairs</a> with Generate Key Pairs. You
+can also <a href="keys_adding.html">add new names<?a> (for new email addresses, name changes, etc..), you
+can sign others keys, revoke your signatures, revoke your keys, and update
+keys with a keyserver (if the encryption program supports that).</p>
+
+

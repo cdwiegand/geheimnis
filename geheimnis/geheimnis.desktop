@@ -1,0 +1,12 @@
+# KDE Config File  
+[KDE Desktop Entry]
+Type=Application
+Exec=geheimnis -caption "%c" %i %m  
+Icon=geheimnis.xpm
+MiniIcon=geheimnis.xpm
+DocPath=geheimnis/index.html
+Comment=
+Comment[de]=
+Terminal=0
+Name=Geheimnis
+Name[de]=Geheimnis

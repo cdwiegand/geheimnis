@@ -1,0 +1,977 @@
+# Makefile.in generated automatically by automake 1.5 from Makefile.am.
+# KDE tags expanded automatically by am_edit - $Revision$ 
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+####### kdevelop will overwrite this part!!! (begin)##########
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+AMTAR = @AMTAR@
+ARTSCCONFIG = @ARTSCCONFIG@
+AS = @AS@
+AUTODIRS = @AUTODIRS@
+AWK = @AWK@
+CC = @CC@
+CONF_FILES = @CONF_FILES@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DCOPIDL = @DCOPIDL@
+DCOPIDL2CPP = @DCOPIDL2CPP@
+DCOP_DEPENDENCIES = @DCOP_DEPENDENCIES@
+DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
+DOXYGEN = @DOXYGEN@
+DOXYGEN_PROJECT_NAME = @DOXYGEN_PROJECT_NAME@
+DOXYGEN_PROJECT_NUMBER = @DOXYGEN_PROJECT_NUMBER@
+DPMSINC = @DPMSINC@
+DPMSLIB = @DPMSLIB@
+ECHO = @ECHO@
+EXEEXT = @EXEEXT@
+FRAMEWORK_COREAUDIO = @FRAMEWORK_COREAUDIO@
+GCJ = @GCJ@
+GCJFLAGS = @GCJFLAGS@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+IDL_DEPENDENCIES = @IDL_DEPENDENCIES@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+JAR = @JAR@
+JAVAC = @JAVAC@
+JAVAH = @JAVAH@
+JVMLIBS = @JVMLIBS@
+KDECONFIG = @KDECONFIG@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_HAS_DOXYGEN = @KDE_HAS_DOXYGEN@
+KDE_HAVE_DOT = @KDE_HAVE_DOT@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_MT_LDFLAGS = @KDE_MT_LDFLAGS@
+KDE_MT_LIBS = @KDE_MT_LIBS@
+KDE_PLUGIN = @KDE_PLUGIN@
+KDE_RPATH = @KDE_RPATH@
+KDE_USE_CLOSURE_FALSE = @KDE_USE_CLOSURE_FALSE@
+KDE_USE_CLOSURE_TRUE = @KDE_USE_CLOSURE_TRUE@
+KDE_USE_FINAL_FALSE = @KDE_USE_FINAL_FALSE@
+KDE_USE_FINAL_TRUE = @KDE_USE_FINAL_TRUE@
+KDE_XSL_STYLESHEET = @KDE_XSL_STYLESHEET@
+LEX = @LEX@
+LEXLIB = @LEXLIB@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBGEN = @LIBGEN@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBRESOLV = @LIBRESOLV@
+LIBSHADOW = @LIBSHADOW@
+LIBSM = @LIBSM@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTIL = @LIBUTIL@
+LIBXINERAMA = @LIBXINERAMA@
+LIBZ = @LIBZ@
+LIB_KAB = @LIB_KAB@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEPRINT = @LIB_KDEPRINT@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KHTML = @LIB_KHTML@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_KIO = @LIB_KIO@
+LIB_KPARTS = @LIB_KPARTS@
+LIB_KSPELL = @LIB_KSPELL@
+LIB_KSYCOCA = @LIB_KSYCOCA@
+LIB_POLL = @LIB_POLL@
+LIB_QPE = @LIB_QPE@
+LIB_QT = @LIB_QT@
+LIB_QTOPIA = @LIB_QTOPIA@
+LIB_SMB = @LIB_SMB@
+LIB_X11 = @LIB_X11@
+LIB_XEXT = @LIB_XEXT@
+LN_S = @LN_S@
+MCOPIDL = @MCOPIDL@
+MEINPROC = @MEINPROC@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NOOPT_CFLAGS = @NOOPT_CFLAGS@
+NOOPT_CXXFLAGS = @NOOPT_CXXFLAGS@
+NOREPO = @NOREPO@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PAMLIBS = @PAMLIBS@
+PASSWDLIBS = @PASSWDLIBS@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+PYTHONMODDIR = @PYTHONMODDIR@
+QTDOCDIR = @QTDOCDIR@
+QTE_NORTTI = @QTE_NORTTI@
+QTOPIA_INCLUDES = @QTOPIA_INCLUDES@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+RC = @RC@
+REPO = @REPO@
+SETUIDFLAGS = @SETUIDFLAGS@
+STRIP = @STRIP@
+TOPSUBDIRS = @TOPSUBDIRS@
+UIC = @UIC@
+UIC_TR = @UIC_TR@
+USER_INCLUDES = @USER_INCLUDES@
+USER_LDFLAGS = @USER_LDFLAGS@
+USE_EXCEPTIONS = @USE_EXCEPTIONS@
+USE_RTTI = @USE_RTTI@
+USE_THREADS = @USE_THREADS@
+VERSION = @VERSION@
+WOVERLOADED_VIRTUAL = @WOVERLOADED_VIRTUAL@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_PRE_LIBS = @X_PRE_LIBS@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+am__include = @am__include@
+am__quote = @am__quote@
+idldir = @idldir@
+install_sh = @install_sh@
+jni_includes = @jni_includes@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_libs_htmldir = @kde_libs_htmldir@
+kde_libs_prefix = @kde_libs_prefix@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_moduledir = @kde_moduledir@
+kde_qtver = @kde_qtver@
+kde_servicesdir = @kde_servicesdir@
+kde_servicetypesdir = @kde_servicetypesdir@
+kde_sounddir = @kde_sounddir@
+kde_styledir = @kde_styledir@
+kde_templatesdir = @kde_templatesdir@
+kde_wallpaperdir = @kde_wallpaperdir@
+kde_widgetdir = @kde_widgetdir@
+micodir = @micodir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+
+bin_PROGRAMS = geheimnis
+
+geheimnis_SOURCES = profilemanager.cpp profileeditbase.cpp mySession.cpp myServerInterface.cpp myProfile.cpp myKeyring.cpp myClipboard.cpp misc.cpp main.cpp kPGPSelectKey.cpp kPGPProfileEdit_PGP6.cpp kPGPProfileEdit_PGP5.cpp kPGPProfileEdit_PGP2.cpp kPGPProfileEdit_New.cpp kPGPProfileEdit_GPG.cpp kPGPPrefs.cpp kPGPLicense.cpp kPGPKeys.cpp kPGPKeyProps.cpp kPGPKeyList.cpp kPGPKeyExport.cpp kPGPKeyAdd.cpp kPGPEncrypt.cpp kPGPDock.cpp kPGPDNDZone.cpp kPGPDecrypt.cpp klabelaction.cpp dummy.cpp cryptdialogbase.cpp be_pgp6.cpp be_pgp5.cpp be_pgp2.cpp be_gpg.cpp 
+geheimnis_LDADD = $(LIB_KFILE) $(LIB_KDEUI) $(LIB_KDECORE) $(LIB_QT) $(LIBSOCKET)
+
+SUBDIRS = icons 
+
+EXTRA_DIST = geheimnisui.rc geheimnis.desktop bdebug.h be_base.h be_gpg.cpp be_gpg.h be_pgp2.cpp be_pgp2.h be_pgp5.cpp be_pgp5.h be_pgp6.cpp be_pgp6.h cryptdialogbase.cpp cryptdialogbase.h defines.h dummy.cpp gdebug.h geheimnisdndzoneui.rc geheimnis-dock.desktop geheimniskeyeditorui.rc hi16-app-geheimnis.xpm hi22-app-geheimnis.xpm hi32-app-geheimnis.xpm klabelaction.cpp klabelaction.h kPGPDecrypt.cpp kPGPDecrypt.h kPGPDNDZone.cpp kPGPDNDZone.h kPGPDock.cpp kPGPDock.h kPGPEncrypt.cpp kPGPEncrypt.h kPGPKeyAdd.cpp kPGPKeyAdd.h kPGPKeyExport.cpp kPGPKeyExport.h kPGPKeyList.cpp kPGPKeyList.h kPGPKeyProps.cpp kPGPKeyProps.h kPGPKeys.cpp kPGPKeys.h kPGPLicense.cpp kPGPLicense.h kPGPPrefs.cpp kPGPPrefs.h kPGPProfileEdit_GPG.cpp kPGPProfileEdit_GPG.h kPGPProfileEdit_New.cpp kPGPProfileEdit_New.h kPGPProfileEdit_PGP2.cpp kPGPProfileEdit_PGP2.h kPGPProfileEdit_PGP5.cpp kPGPProfileEdit_PGP5.h kPGPProfileEdit_PGP6.cpp kPGPProfileEdit_PGP6.h kPGPSelectKey.cpp kPGPSelectKey.h main.cpp misc.cpp misc.h myClipboard.cpp myClipboard.h myKeyring.cpp myKeyring.h myProfile.cpp myProfile.h myServerInterface.cpp myServerInterface.h mySession.cpp mySession.h profileeditbase.cpp profileeditbase.h profilemanager.cpp profilemanager.h 
+
+####### kdevelop will overwrite this part!!! (end)############
+# These paths are KDE specific. Use them:
+# kde_appsdir         Where your application's menu entry (.desktop) should go to.
+# kde_icondir         Where your icon should go to - better use KDE_ICON.
+# kde_sounddir        Where your sounds should go to.
+# kde_htmldir         Where your docs should go to. (contains lang subdirs)
+# kde_datadir         Where you install application data. (Use a subdir)
+# kde_locale          Where translation files should go to. (contains lang subdirs)
+# kde_cgidir          Where cgi-bin executables should go to.
+# kde_confdir         Where config files should go to (system-wide ones with default values).
+# kde_mimedir         Where mimetypes .desktop files should go to.
+# kde_servicesdir     Where services .desktop files should go to.
+# kde_servicetypesdir Where servicetypes .desktop files should go to.
+# kde_toolbardir      Where general toolbar icons should go to (deprecated, use KDE_ICON).
+# kde_wallpaperdir    Where general wallpapers should go to.
+# kde_templatesdir    Where templates for the "New" menu (Konqueror/KDesktop) should go to.
+# kde_bindir          Where executables should go to. Use bin_PROGRAMS or bin_SCRIPTS.
+# kde_libdir          Where shared libraries should go to. Use lib_LTLIBRARIES.
+# kde_moduledir       Where modules (e.g. parts) should go to. Use kde_module_LTLIBRARIES.
+# kde_styledir        Where Qt/KDE widget styles should go to (new in KDE 3).
+# kde_designerdir     Where Qt Designer plugins should go to (new in KDE 3).
+
+# set the include path for X, qt and KDE
+INCLUDES = $(all_includes)
+
+#>- METASOURCES = AUTO
+
+# the library search path. 
+geheimnis_LDFLAGS = $(all_libraries) $(KDE_RPATH)
+
+rcdir = $(kde_datadir)/geheimnis
+rc_DATA = geheimnisui.rc
+subdir = geheimnis
+mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+CONFIG_HEADER = $(top_builddir)/config.h
+CONFIG_CLEAN_FILES =
+bin_PROGRAMS = geheimnis$(EXEEXT)
+PROGRAMS = $(bin_PROGRAMS)
+
+am_geheimnis_OBJECTS = profilemanager.$(OBJEXT) \
+	profileeditbase.$(OBJEXT) mySession.$(OBJEXT) \
+	myServerInterface.$(OBJEXT) myProfile.$(OBJEXT) \
+	myKeyring.$(OBJEXT) myClipboard.$(OBJEXT) misc.$(OBJEXT) \
+	main.$(OBJEXT) kPGPSelectKey.$(OBJEXT) \
+	kPGPProfileEdit_PGP6.$(OBJEXT) kPGPProfileEdit_PGP5.$(OBJEXT) \
+	kPGPProfileEdit_PGP2.$(OBJEXT) kPGPProfileEdit_New.$(OBJEXT) \
+	kPGPProfileEdit_GPG.$(OBJEXT) kPGPPrefs.$(OBJEXT) \
+	kPGPLicense.$(OBJEXT) kPGPKeys.$(OBJEXT) kPGPKeyProps.$(OBJEXT) \
+	kPGPKeyList.$(OBJEXT) kPGPKeyExport.$(OBJEXT) \
+	kPGPKeyAdd.$(OBJEXT) kPGPEncrypt.$(OBJEXT) kPGPDock.$(OBJEXT) \
+	kPGPDNDZone.$(OBJEXT) kPGPDecrypt.$(OBJEXT) \
+	klabelaction.$(OBJEXT) dummy.$(OBJEXT) \
+	cryptdialogbase.$(OBJEXT) be_pgp6.$(OBJEXT) be_pgp5.$(OBJEXT) \
+	be_pgp2.$(OBJEXT) be_gpg.$(OBJEXT)
+#>- geheimnis_OBJECTS = $(am_geheimnis_OBJECTS)
+#>+ 18
+geheimnis_final_OBJECTS = geheimnis.all_cpp.o 
+geheimnis_nofinal_OBJECTS = profilemanager.$(OBJEXT) \
+	profileeditbase.$(OBJEXT) mySession.$(OBJEXT) \
+	myServerInterface.$(OBJEXT) myProfile.$(OBJEXT) \
+	myKeyring.$(OBJEXT) myClipboard.$(OBJEXT) misc.$(OBJEXT) \
+	main.$(OBJEXT) kPGPSelectKey.$(OBJEXT) \
+	kPGPProfileEdit_PGP6.$(OBJEXT) kPGPProfileEdit_PGP5.$(OBJEXT) \
+	kPGPProfileEdit_PGP2.$(OBJEXT) kPGPProfileEdit_New.$(OBJEXT) \
+	kPGPProfileEdit_GPG.$(OBJEXT) kPGPPrefs.$(OBJEXT) \
+	kPGPLicense.$(OBJEXT) kPGPKeys.$(OBJEXT) kPGPKeyProps.$(OBJEXT) \
+	kPGPKeyList.$(OBJEXT) kPGPKeyExport.$(OBJEXT) \
+	kPGPKeyAdd.$(OBJEXT) kPGPEncrypt.$(OBJEXT) kPGPDock.$(OBJEXT) \
+	kPGPDNDZone.$(OBJEXT) kPGPDecrypt.$(OBJEXT) \
+	klabelaction.$(OBJEXT) dummy.$(OBJEXT) \
+	cryptdialogbase.$(OBJEXT) be_pgp6.$(OBJEXT) be_pgp5.$(OBJEXT) \
+	be_pgp2.$(OBJEXT) be_gpg.$(OBJEXT)
+@KDE_USE_FINAL_FALSE@geheimnis_OBJECTS = $(geheimnis_nofinal_OBJECTS)
+@KDE_USE_FINAL_TRUE@geheimnis_OBJECTS = $(geheimnis_final_OBJECTS)
+geheimnis_DEPENDENCIES =
+
+DEFS = @DEFS@
+DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+depcomp = $(SHELL) $(top_srcdir)/admin/depcomp
+#>- @AMDEP_TRUE@DEP_FILES = $(DEPDIR)/be_gpg.Po $(DEPDIR)/be_pgp2.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/be_pgp5.Po $(DEPDIR)/be_pgp6.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/cryptdialogbase.Po $(DEPDIR)/dummy.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPDNDZone.Po $(DEPDIR)/kPGPDecrypt.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPDock.Po $(DEPDIR)/kPGPEncrypt.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPKeyAdd.Po $(DEPDIR)/kPGPKeyExport.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPKeyList.Po $(DEPDIR)/kPGPKeyProps.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPKeys.Po $(DEPDIR)/kPGPLicense.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPPrefs.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_GPG.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_New.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP2.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP5.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP6.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/kPGPSelectKey.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/klabelaction.Po $(DEPDIR)/main.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/misc.Po $(DEPDIR)/myClipboard.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/myKeyring.Po $(DEPDIR)/myProfile.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/myServerInterface.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/mySession.Po $(DEPDIR)/profileeditbase.Po \
+#>- @AMDEP_TRUE@	$(DEPDIR)/profilemanager.Po
+#>+ 43
+@AMDEP_TRUE@@KDE_USE_FINAL_TRUE@DEP_FILES =   $(DEPDIR)/geheimnis.all_cpp.P  $(DEPDIR)/be_gpg.Po $(DEPDIR)/be_pgp2.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/be_pgp5.Po $(DEPDIR)/be_pgp6.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/cryptdialogbase.Po $(DEPDIR)/dummy.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPDNDZone.Po $(DEPDIR)/kPGPDecrypt.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPDock.Po $(DEPDIR)/kPGPEncrypt.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPKeyAdd.Po $(DEPDIR)/kPGPKeyExport.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPKeyList.Po $(DEPDIR)/kPGPKeyProps.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPKeys.Po $(DEPDIR)/kPGPLicense.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPPrefs.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_GPG.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_New.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP2.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP5.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP6.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPSelectKey.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/klabelaction.Po $(DEPDIR)/main.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/misc.Po $(DEPDIR)/myClipboard.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/myKeyring.Po $(DEPDIR)/myProfile.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/myServerInterface.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/mySession.Po $(DEPDIR)/profileeditbase.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/profilemanager.Po
+@AMDEP_TRUE@@KDE_USE_FINAL_FALSE@DEP_FILES =   $(DEPDIR)/be_gpg.Po $(DEPDIR)/be_pgp2.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/be_pgp5.Po $(DEPDIR)/be_pgp6.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/cryptdialogbase.Po $(DEPDIR)/dummy.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPDNDZone.Po $(DEPDIR)/kPGPDecrypt.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPDock.Po $(DEPDIR)/kPGPEncrypt.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPKeyAdd.Po $(DEPDIR)/kPGPKeyExport.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPKeyList.Po $(DEPDIR)/kPGPKeyProps.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPKeys.Po $(DEPDIR)/kPGPLicense.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPPrefs.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_GPG.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_New.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP2.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP5.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPProfileEdit_PGP6.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/kPGPSelectKey.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/klabelaction.Po $(DEPDIR)/main.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/misc.Po $(DEPDIR)/myClipboard.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/myKeyring.Po $(DEPDIR)/myProfile.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/myServerInterface.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/mySession.Po $(DEPDIR)/profileeditbase.Po \
+	@AMDEP_TRUE@	$(DEPDIR)/profilemanager.Po
+
+#>- CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
+#>- $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 2
+CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
+	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+#>- LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) \
+#>- $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) \
+#>- $(AM_CXXFLAGS) $(CXXFLAGS)
+#>+ 3
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile --tag=CXX $(CXX) $(DEFS) \
+	$(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS)
+CXXLD = $(CXX)
+#>- CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) \
+#>- $(AM_LDFLAGS) $(LDFLAGS) -o $@
+#>+ 2
+CXXLINK = $(LIBTOOL) --mode=link --tag=CXX $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(KDE_CXXFLAGS) \
+	$(AM_LDFLAGS) $(LDFLAGS) -o $@
+CXXFLAGS = @CXXFLAGS@
+DIST_SOURCES = $(geheimnis_SOURCES)
+DATA = $(rc_DATA)
+
+
+RECURSIVE_TARGETS = info-recursive dvi-recursive install-info-recursive \
+	uninstall-info-recursive all-recursive install-data-recursive \
+	install-exec-recursive installdirs-recursive install-recursive \
+	uninstall-recursive check-recursive installcheck-recursive
+DIST_COMMON = Makefile.am Makefile.in
+DIST_SUBDIRS = $(SUBDIRS)
+SOURCES = $(geheimnis_SOURCES)
+
+#>- all: all-recursive
+#>+ 1
+all: docs-am  all-recursive
+
+.SUFFIXES:
+.SUFFIXES: .cpp .lo .o .obj
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+	-rm -f libtool
+$(srcdir)/Makefile.in:  Makefile.am  $(top_srcdir)/configure.in $(ACLOCAL_M4)
+#>- 	cd $(top_srcdir) && \
+#>- $(AUTOMAKE) --gnu  geheimnis/Makefile
+#>+ 3
+	cd $(top_srcdir) && \
+	$(AUTOMAKE) --gnu  geheimnis/Makefile
+	cd $(top_srcdir) && perl admin/am_edit geheimnis/Makefile.in
+Makefile:  $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	CONFIG_HEADERS= CONFIG_LINKS= \
+	CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	p1=`echo $$p|sed 's/$(EXEEXT)$$//'`; \
+	if test -f $$p \
+	|| test -f $$p1 \
+	; then \
+	f=`echo $$p1|sed '$(transform);s/$$/$(EXEEXT)/'`; \
+	echo " $(INSTALL_PROGRAM_ENV) $(LIBTOOL) --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/$$f"; \
+	$(INSTALL_PROGRAM_ENV) $(LIBTOOL) --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/$$f; \
+	else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	f=`echo $$p|sed 's/$(EXEEXT)$$//;$(transform);s/$$/$(EXEEXT)/'`; \
+	echo " rm -f $(DESTDIR)$(bindir)/$$f"; \
+	rm -f $(DESTDIR)$(bindir)/$$f; \
+	done
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+geheimnis$(EXEEXT): $(geheimnis_OBJECTS) $(geheimnis_DEPENDENCIES) 
+	@rm -f geheimnis$(EXEEXT)
+	$(CXXLINK) $(geheimnis_LDFLAGS) $(geheimnis_OBJECTS) $(geheimnis_LDADD) $(LIBS)
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT) core *.core
+
+distclean-compile:
+	-rm -f *.tab.c
+
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/be_gpg.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/be_pgp2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/be_pgp5.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/be_pgp6.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/cryptdialogbase.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/dummy.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPDNDZone.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPDecrypt.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPDock.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPEncrypt.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPKeyAdd.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPKeyExport.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPKeyList.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPKeyProps.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPKeys.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPLicense.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPPrefs.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPProfileEdit_GPG.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPProfileEdit_New.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPProfileEdit_PGP2.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPProfileEdit_PGP5.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPProfileEdit_PGP6.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/kPGPSelectKey.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/klabelaction.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/main.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/misc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/myClipboard.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/myKeyring.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/myProfile.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/myServerInterface.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/mySession.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/profileeditbase.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/profilemanager.Po@am__quote@
+
+distclean-depend:
+	-rm -rf $(DEPDIR)
+
+.cpp.o:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CXXCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+
+.cpp.obj:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CXXCOMPILE) -c -o $@ `cygpath -w $<`
+
+.cpp.lo:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Plo' tmpdepfile='$(DEPDIR)/$*.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LTCXXCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+CXXDEPMODE = @CXXDEPMODE@
+uninstall-info-am:
+install-rcDATA: $(rc_DATA)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(rcdir)
+	@list='$(rc_DATA)'; for p in $$list; do \
+	if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	f="`echo $$p | sed -e 's|^.*/||'`"; \
+	echo " $(INSTALL_DATA) $$d$$p $(DESTDIR)$(rcdir)/$$f"; \
+	$(INSTALL_DATA) $$d$$p $(DESTDIR)$(rcdir)/$$f; \
+	done
+
+uninstall-rcDATA:
+	@$(NORMAL_UNINSTALL)
+	@list='$(rc_DATA)'; for p in $$list; do \
+	f="`echo $$p | sed -e 's|^.*/||'`"; \
+	echo " rm -f $(DESTDIR)$(rcdir)/$$f"; \
+	rm -f $(DESTDIR)$(rcdir)/$$f; \
+	done
+
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run `make' without going through this Makefile.
+# To change the values of `make' variables: instead of editing Makefiles,
+# (1) if the variable is set in `config.status', edit `config.status'
+#     (which will cause the Makefiles to be regenerated when you run `make');
+# (2) otherwise, pass the desired values on the `make' command line.
+$(RECURSIVE_TARGETS):
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	echo "Making $$target in $$subdir"; \
+	if test "$$subdir" = "."; then \
+	dot_seen=yes; \
+	local_target="$$target-am"; \
+	else \
+	local_target="$$target"; \
+	fi; \
+	(cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	|| case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	$(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
+mostlyclean-recursive clean-recursive distclean-recursive \
+	maintainer-clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	case "$@" in \
+	distclean-* | maintainer-clean-*) list='$(DIST_SUBDIRS)' ;; \
+	*) list='$(SUBDIRS)' ;; \
+	esac; \
+	rev=''; for subdir in $$list; do \
+	if test "$$subdir" = "."; then :; else \
+	rev="$$subdir $$rev"; \
+	fi; \
+	done; \
+	rev="$$rev ."; \
+	target=`echo $@ | sed s/-recursive//`; \
+	for subdir in $$rev; do \
+	echo "Making $$target in $$subdir"; \
+	if test "$$subdir" = "."; then \
+	local_target="$$target-am"; \
+	else \
+	local_target="$$target"; \
+	fi; \
+	(cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	|| case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
+tags-recursive:
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	done | \
+	$(AWK) '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	mkid -fID $$unique $(LISP)
+
+TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+	$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	if test "$$subdir" = .; then :; else \
+	test -f $$subdir/TAGS && tags="$$tags -i $$here/$$subdir/TAGS"; \
+	fi; \
+	done; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	done | \
+	$(AWK) '    { files[$$0] = 1; } \
+	END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	|| etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+GTAGS:
+	here=`CDPATH=: && cd $(top_builddir) && pwd` \
+	&& cd $(top_srcdir) \
+	&& gtags -i $(GTAGS_ARGS) $$here
+
+distclean-tags:
+	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH
+
+#>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+#>+ 4
+KDE_DIST=geheimnis.desktop geheimnis geheimnisui.rc 
+
+DISTFILES= $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+
+
+top_distdir = ..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	if test -f $$file; then d=.; else d=$(srcdir); fi; \
+	dir=`echo "$$file" | sed -e 's,/[^/]*$$,,'`; \
+	if test "$$dir" != "$$file" && test "$$dir" != "."; then \
+	$(mkinstalldirs) "$(distdir)/$$dir"; \
+	fi; \
+	if test -d $$d/$$file; then \
+	cp -pR $$d/$$file $(distdir) \
+	|| exit 1; \
+	else \
+	test -f $(distdir)/$$file \
+	|| cp -p $$d/$$file $(distdir)/$$file \
+	|| exit 1; \
+	fi; \
+	done
+	for subdir in $(SUBDIRS); do \
+	if test "$$subdir" = .; then :; else \
+	test -d $(distdir)/$$subdir \
+	|| mkdir $(distdir)/$$subdir \
+	|| exit 1; \
+	(cd $$subdir && \
+	$(MAKE) $(AM_MAKEFLAGS) \
+	top_distdir="$(top_distdir)" \
+	distdir=../$(distdir)/$$subdir \
+	distdir) \
+	|| exit 1; \
+	fi; \
+	done
+check-am: all-am
+check: check-recursive
+all-am: Makefile $(PROGRAMS) $(DATA)
+installdirs: installdirs-recursive
+installdirs-am:
+	$(mkinstalldirs) $(DESTDIR)$(bindir) $(DESTDIR)$(rcdir)
+
+install: install-recursive
+install-exec: install-exec-recursive
+install-data: install-data-recursive
+uninstall: uninstall-recursive
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-recursive
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	`test -z '$(STRIP)' || \
+	echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES) stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+#>- clean: clean-recursive
+#>+ 1
+clean: kde-rpo-clean  clean-recursive
+
+#>- clean-am: clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am
+#>+ 1
+clean-am: clean-metasources clean-final  clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am
+
+distclean: distclean-recursive
+
+distclean-am: clean-am distclean-compile distclean-depend \
+	distclean-generic distclean-libtool distclean-tags
+
+dvi: dvi-recursive
+
+dvi-am:
+
+info: info-recursive
+
+info-am:
+
+install-data-am: install-data-local install-rcDATA
+
+install-exec-am: install-binPROGRAMS
+
+install-info: install-info-recursive
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-recursive
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-recursive
+
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
+
+uninstall-am: uninstall-binPROGRAMS uninstall-info-am uninstall-local \
+	uninstall-rcDATA
+
+uninstall-info: uninstall-info-recursive
+
+.PHONY: $(RECURSIVE_TARGETS) GTAGS all all-am check check-am clean \
+	clean-binPROGRAMS clean-generic clean-libtool clean-recursive \
+	distclean distclean-compile distclean-depend distclean-generic \
+	distclean-libtool distclean-recursive distclean-tags distdir \
+	dvi dvi-am dvi-recursive info info-am info-recursive install \
+	install-am install-binPROGRAMS install-data install-data-am \
+	install-data-local install-data-recursive install-exec \
+	install-exec-am install-exec-recursive install-info \
+	install-info-am install-info-recursive install-man \
+	install-rcDATA install-recursive install-strip installcheck \
+	installcheck-am installdirs installdirs-am \
+	installdirs-recursive maintainer-clean maintainer-clean-generic \
+	maintainer-clean-recursive mostlyclean mostlyclean-compile \
+	mostlyclean-generic mostlyclean-libtool mostlyclean-recursive \
+	tags tags-recursive uninstall uninstall-am \
+	uninstall-binPROGRAMS uninstall-info-am \
+	uninstall-info-recursive uninstall-local uninstall-rcDATA \
+	uninstall-recursive
+
+
+install-data-local:
+#>- 	$(mkinstalldirs) $(kde_appsdir)/Applications/
+#>+ 1
+	$(mkinstalldirs) $(DESTDIR)$(kde_appsdir)/Applications/
+#>- 	$(INSTALL_DATA) $(srcdir)/geheimnis.desktop $(kde_appsdir)/Applications/geheimnis.desktop
+#>+ 1
+	$(INSTALL_DATA) $(srcdir)/geheimnis.desktop $(DESTDIR)$(kde_appsdir)/Applications/geheimnis.desktop
+
+uninstall-local:
+#>- 	-rm -f $(kde_appsdir)/Applications/geheimnis.desktop
+#>+ 1
+	-rm -f $(DESTDIR)$(kde_appsdir)/Applications/geheimnis.desktop
+
+messages: rc.cpp
+	LIST=`find . -name \*.h -o -name \*.hh -o -name \*.H -o -name \*.hxx -o -name \*.hpp -o -name \*.cpp -o -name \*.cc -o -name \*.cxx -o -name \*.ecpp -o -name \*.C`; \
+	if test -n "$$LIST"; then \
+	$(XGETTEXT) $$LIST -o $(podir)/geheimnis.pot; \
+	fi
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+#>+ 3
+kPGPKeyExport.moc: $(srcdir)/kPGPKeyExport.h
+	$(MOC) $(srcdir)/kPGPKeyExport.h -o kPGPKeyExport.moc
+
+#>+ 3
+kPGPKeys.moc: $(srcdir)/kPGPKeys.h
+	$(MOC) $(srcdir)/kPGPKeys.h -o kPGPKeys.moc
+
+#>+ 3
+klabelaction.moc: $(srcdir)/klabelaction.h
+	$(MOC) $(srcdir)/klabelaction.h -o klabelaction.moc
+
+#>+ 3
+kPGPKeyList.moc: $(srcdir)/kPGPKeyList.h
+	$(MOC) $(srcdir)/kPGPKeyList.h -o kPGPKeyList.moc
+
+#>+ 3
+profileeditbase.moc: $(srcdir)/profileeditbase.h
+	$(MOC) $(srcdir)/profileeditbase.h -o profileeditbase.moc
+
+#>+ 3
+kPGPDecrypt.moc: $(srcdir)/kPGPDecrypt.h
+	$(MOC) $(srcdir)/kPGPDecrypt.h -o kPGPDecrypt.moc
+
+#>+ 3
+kPGPSelectKey.moc: $(srcdir)/kPGPSelectKey.h
+	$(MOC) $(srcdir)/kPGPSelectKey.h -o kPGPSelectKey.moc
+
+#>+ 3
+kPGPProfileEdit_GPG.moc: $(srcdir)/kPGPProfileEdit_GPG.h
+	$(MOC) $(srcdir)/kPGPProfileEdit_GPG.h -o kPGPProfileEdit_GPG.moc
+
+#>+ 3
+kPGPKeyProps.moc: $(srcdir)/kPGPKeyProps.h
+	$(MOC) $(srcdir)/kPGPKeyProps.h -o kPGPKeyProps.moc
+
+#>+ 3
+cryptdialogbase.moc: $(srcdir)/cryptdialogbase.h
+	$(MOC) $(srcdir)/cryptdialogbase.h -o cryptdialogbase.moc
+
+#>+ 3
+kPGPProfileEdit_PGP5.moc: $(srcdir)/kPGPProfileEdit_PGP5.h
+	$(MOC) $(srcdir)/kPGPProfileEdit_PGP5.h -o kPGPProfileEdit_PGP5.moc
+
+#>+ 3
+kPGPProfileEdit_PGP6.moc: $(srcdir)/kPGPProfileEdit_PGP6.h
+	$(MOC) $(srcdir)/kPGPProfileEdit_PGP6.h -o kPGPProfileEdit_PGP6.moc
+
+#>+ 3
+kPGPKeyAdd.moc: $(srcdir)/kPGPKeyAdd.h
+	$(MOC) $(srcdir)/kPGPKeyAdd.h -o kPGPKeyAdd.moc
+
+#>+ 3
+kPGPLicense.moc: $(srcdir)/kPGPLicense.h
+	$(MOC) $(srcdir)/kPGPLicense.h -o kPGPLicense.moc
+
+#>+ 3
+kPGPProfileEdit_New.moc: $(srcdir)/kPGPProfileEdit_New.h
+	$(MOC) $(srcdir)/kPGPProfileEdit_New.h -o kPGPProfileEdit_New.moc
+
+#>+ 3
+kPGPProfileEdit_PGP2.moc: $(srcdir)/kPGPProfileEdit_PGP2.h
+	$(MOC) $(srcdir)/kPGPProfileEdit_PGP2.h -o kPGPProfileEdit_PGP2.moc
+
+#>+ 3
+kPGPDNDZone.moc: $(srcdir)/kPGPDNDZone.h
+	$(MOC) $(srcdir)/kPGPDNDZone.h -o kPGPDNDZone.moc
+
+#>+ 3
+kPGPPrefs.moc: $(srcdir)/kPGPPrefs.h
+	$(MOC) $(srcdir)/kPGPPrefs.h -o kPGPPrefs.moc
+
+#>+ 3
+kPGPEncrypt.moc: $(srcdir)/kPGPEncrypt.h
+	$(MOC) $(srcdir)/kPGPEncrypt.h -o kPGPEncrypt.moc
+
+#>+ 3
+kPGPDock.moc: $(srcdir)/kPGPDock.h
+	$(MOC) $(srcdir)/kPGPDock.h -o kPGPDock.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  kPGPKeyExport.moc kPGPKeys.moc klabelaction.moc kPGPKeyList.moc profileeditbase.moc kPGPDecrypt.moc kPGPSelectKey.moc kPGPProfileEdit_GPG.moc kPGPKeyProps.moc cryptdialogbase.moc kPGPProfileEdit_PGP5.moc kPGPProfileEdit_PGP6.moc kPGPKeyAdd.moc kPGPLicense.moc kPGPProfileEdit_New.moc kPGPProfileEdit_PGP2.moc kPGPDNDZone.moc kPGPPrefs.moc kPGPEncrypt.moc kPGPDock.moc
+
+#>+ 2
+docs-am:
+
+#>+ 6
+force-reedit:
+		cd $(top_srcdir) && \
+	$(AUTOMAKE) --gnu  geheimnis/Makefile
+	cd $(top_srcdir) && perl admin/am_edit geheimnis/Makefile.in
+
+
+#>+ 11
+geheimnis.all_cpp.cpp: $(srcdir)/Makefile.in  $(srcdir)/profilemanager.cpp $(srcdir)/profileeditbase.cpp $(srcdir)/mySession.cpp $(srcdir)/myServerInterface.cpp $(srcdir)/myProfile.cpp $(srcdir)/myKeyring.cpp $(srcdir)/myClipboard.cpp $(srcdir)/misc.cpp $(srcdir)/main.cpp $(srcdir)/kPGPSelectKey.cpp $(srcdir)/kPGPProfileEdit_PGP6.cpp $(srcdir)/kPGPProfileEdit_PGP5.cpp $(srcdir)/kPGPProfileEdit_PGP2.cpp $(srcdir)/kPGPProfileEdit_New.cpp $(srcdir)/kPGPProfileEdit_GPG.cpp $(srcdir)/kPGPPrefs.cpp $(srcdir)/kPGPLicense.cpp $(srcdir)/kPGPKeys.cpp $(srcdir)/kPGPKeyProps.cpp $(srcdir)/kPGPKeyList.cpp $(srcdir)/kPGPKeyExport.cpp $(srcdir)/kPGPKeyAdd.cpp $(srcdir)/kPGPEncrypt.cpp $(srcdir)/kPGPDock.cpp $(srcdir)/kPGPDNDZone.cpp $(srcdir)/kPGPDecrypt.cpp $(srcdir)/klabelaction.cpp $(srcdir)/dummy.cpp $(srcdir)/cryptdialogbase.cpp $(srcdir)/be_pgp6.cpp $(srcdir)/be_pgp5.cpp $(srcdir)/be_pgp2.cpp $(srcdir)/be_gpg.cpp  kPGPKeyExport.moc klabelaction.moc kPGPKeys.moc kPGPKeyList.moc profileeditbase.moc kPGPDecrypt.moc kPGPSelectKey.moc kPGPProfileEdit_GPG.moc kPGPKeyProps.moc cryptdialogbase.moc kPGPProfileEdit_PGP5.moc kPGPProfileEdit_PGP6.moc kPGPKeyAdd.moc kPGPLicense.moc kPGPProfileEdit_New.moc kPGPProfileEdit_PGP2.moc kPGPDNDZone.moc kPGPPrefs.moc kPGPDock.moc kPGPEncrypt.moc
+	@echo 'creating geheimnis.all_cpp.cpp ...'; \
+	rm -f geheimnis.all_cpp.files geheimnis.all_cpp.final; \
+	echo "#define KDE_USE_FINAL 1" >> geheimnis.all_cpp.final; \
+	for file in profilemanager.cpp profileeditbase.cpp mySession.cpp myServerInterface.cpp myProfile.cpp myKeyring.cpp myClipboard.cpp misc.cpp main.cpp kPGPSelectKey.cpp kPGPProfileEdit_PGP6.cpp kPGPProfileEdit_PGP5.cpp kPGPProfileEdit_PGP2.cpp kPGPProfileEdit_New.cpp kPGPProfileEdit_GPG.cpp kPGPPrefs.cpp kPGPLicense.cpp kPGPKeys.cpp kPGPKeyProps.cpp kPGPKeyList.cpp kPGPKeyExport.cpp kPGPKeyAdd.cpp kPGPEncrypt.cpp kPGPDock.cpp kPGPDNDZone.cpp kPGPDecrypt.cpp klabelaction.cpp dummy.cpp cryptdialogbase.cpp be_pgp6.cpp be_pgp5.cpp be_pgp2.cpp be_gpg.cpp ; do \
+	  echo "#include \"$$file\"" >> geheimnis.all_cpp.files; \
+	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> geheimnis.all_cpp.final; \
+	done; \
+	cat geheimnis.all_cpp.final geheimnis.all_cpp.files > geheimnis.all_cpp.cpp; \
+	rm -f geheimnis.all_cpp.final geheimnis.all_cpp.files
+
+#>+ 3
+clean-final:
+	-rm -f geheimnis.all_cpp.cpp
+
+#>+ 2
+final:
+	$(MAKE) geheimnis_OBJECTS="$(geheimnis_final_OBJECTS)" all-am
+#>+ 2
+final-install:
+	$(MAKE) geheimnis_OBJECTS="$(geheimnis_final_OBJECTS)" install-am
+#>+ 2
+no-final:
+	$(MAKE) geheimnis_OBJECTS="$(geheimnis_nofinal_OBJECTS)" all-am
+#>+ 2
+no-final-install:
+	$(MAKE) geheimnis_OBJECTS="$(geheimnis_nofinal_OBJECTS)" install-am
+#>+ 3
+cvs-clean:
+	$(MAKE) admindir=$(top_srcdir)/admin -f $(top_srcdir)/admin/Makefile.common cvs-clean
+
+#>+ 3
+kde-rpo-clean:
+	-rm -f *.rpo
+
+#>+ 41
+kPGPProfileEdit_PGP2.lo: kPGPProfileEdit_PGP2.moc 
+kPGPProfileEdit_GPG.o: kPGPProfileEdit_GPG.moc 
+kPGPLicense.lo: kPGPLicense.moc 
+kPGPDNDZone.lo: kPGPDNDZone.moc 
+kPGPKeyAdd.o: kPGPKeyAdd.moc 
+kPGPDecrypt.lo: kPGPDecrypt.moc 
+kPGPKeys.lo: kPGPKeys.moc 
+kPGPDock.lo: kPGPDock.moc 
+kPGPEncrypt.o: kPGPEncrypt.moc 
+kPGPProfileEdit_PGP2.o: kPGPProfileEdit_PGP2.moc 
+profileeditbase.o: profileeditbase.moc 
+kPGPPrefs.o: kPGPPrefs.moc 
+kPGPDecrypt.o: kPGPDecrypt.moc 
+klabelaction.lo: klabelaction.moc 
+kPGPProfileEdit_PGP6.lo: kPGPProfileEdit_PGP6.moc 
+profileeditbase.lo: profileeditbase.moc 
+kPGPKeyList.o: kPGPKeyList.moc 
+cryptdialogbase.lo: cryptdialogbase.moc 
+kPGPKeys.o: kPGPKeys.moc 
+kPGPProfileEdit_PGP6.o: kPGPProfileEdit_PGP6.moc 
+kPGPKeyAdd.lo: kPGPKeyAdd.moc 
+kPGPSelectKey.o: kPGPSelectKey.moc 
+cryptdialogbase.o: cryptdialogbase.moc 
+kPGPKeyExport.o: kPGPKeyExport.moc 
+kPGPKeyProps.lo: kPGPKeyProps.moc 
+kPGPProfileEdit_GPG.lo: kPGPProfileEdit_GPG.moc 
+klabelaction.o: klabelaction.moc 
+kPGPProfileEdit_PGP5.lo: kPGPProfileEdit_PGP5.moc 
+kPGPKeyExport.lo: kPGPKeyExport.moc 
+kPGPLicense.o: kPGPLicense.moc 
+kPGPKeyProps.o: kPGPKeyProps.moc 
+kPGPDock.o: kPGPDock.moc 
+kPGPSelectKey.lo: kPGPSelectKey.moc 
+kPGPKeyList.lo: kPGPKeyList.moc 
+kPGPProfileEdit_New.o: kPGPProfileEdit_New.moc 
+kPGPProfileEdit_New.lo: kPGPProfileEdit_New.moc 
+kPGPProfileEdit_PGP5.o: kPGPProfileEdit_PGP5.moc 
+kPGPDNDZone.o: kPGPDNDZone.moc 
+kPGPPrefs.lo: kPGPPrefs.moc 
+kPGPEncrypt.lo: kPGPEncrypt.moc 
