@@ -21,7 +21,7 @@ KDE 1.x libraries and headers, and QT 1.4x libraries and headers,
 KDE 2.x libraries and headers, and QT 2.x libraries and headers,
 KDE 3.x libraries and headers, and QT 3.x libraries and headers,
 To compile the KDE-based versions, type:
-``
+```
 make -f Makefile.dist # (only if CVS version)
 ./configure
 make
@@ -30,7 +30,7 @@ make install
 
 ## Installing
 
-To install the KDE versions built from source code, type make install. To install the KDE versions from the binaries (rpm, deb, etc.), use your computer's package installer (RedCarpet, rpm -i geheimnis.rpm, dpkg -i geheimnis.deb, etc.)
+To install the KDE versions built from source code, type make install. To install the KDE versions from the binaries (rpm, deb, etc.), use your computer's package installer (RedCarpet, `rpm -i geheimnis.rpm`, `dpkg -i geheimnis.deb`, etc.)
 
 Use it! Tell me!
 
@@ -39,20 +39,20 @@ If it doesn't work, please join the mailing list, Anyone can subscribe.
 # Ancient CVS instructions
 
 If you run a CVS version, run
-  make -f Makefile.dist ; ./configure ; make ; make install
+  `make -f Makefile.dist ; ./configure ; make ; make install`
 
 Note: This is for KDE 3.x only! KDE 2 will NOT compile this!
 
 If you compile from a tar ball, run only
-  ./configure ; make ; make install
+  `./configure ; make ; make install`
 
 Be sure to set your QTDIR and KDEDIR accordingly:
 If you use sh/bash:
-  export KDEDIR=/path/to/kde/dir
-  export QTDIR=/path/to/qt/dir
+  `export KDEDIR=/path/to/kde/dir`
+  `export QTDIR=/path/to/qt/dir`
 If you use csh/tcsh:
-  setenv KDEDIR /path/to/kde/dir
-  setenv QTDIR /path/to/qt/dir
+  `setenv KDEDIR /path/to/kde/dir`
+  `setenv QTDIR /path/to/qt/dir`
 
 http://geheimnis.sourceforge.net/
 
